@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'tt_chocolates';
+    src: url('../fonts/tt_chocolates_light-webfont.woff2') format('woff2'),
+         url('../fonts/tt_chocolates_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_chocolates';
+    src: url('../fonts/tt_chocolates_regular-webfont.woff2') format('woff2'),
+         url('../fonts/tt_chocolates_regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_chocolates';
+    src: url('../fonts/tt_chocolates_medium-webfont.woff2') format('woff2'),
+         url('../fonts/tt_chocolates_medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_chocolates';
+    src: url('../fonts/tt_chocolates_demibold-webfont.woff2') format('woff2'),
+         url('../fonts/tt_chocolates_demibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_chocolates';
+    src: url('../fonts/tt_chocolates_bold-webfont.woff2') format('woff2'),
+         url('../fonts/tt_chocolates_bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_chocolates';
+    src: url('../fonts/tt_chocolates_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/tt_chocolates_extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sky: #003FDB;
+    --red: #FF3E1D;
+    --lightred: #FF7A77;
+
+}
+
+body {
+    font-family: 'tt_chocolates' !important;
+}
+
+.mycontainer {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.font-md {
+    font-weight: 500;
+}
+
+.font-semi {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+textarea {
+    resize: none;
+}
+
+.ex-small {
+    font-size: 12px;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.focus-none:focus {
+    box-shadow: none;
+    border: solid 1px #cdcdcd;
+    outline: none;
+}
+
+.nowrap {
+    text-wrap: nowrap !important;
+}
+
+.bg-sky {
+    background: var(--sky);
+}
+
+.sky {
+    color: var(--sky);
+}
+
+.bluebtn {
+    background-color: var(--sky);
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .main {
+        position: relative;
+    }
+
+    .left {
+        position: absolute;
+        display: none;
+        background-color: #fff !important;
+        z-index: 9999999999;
+    }
+
+    .right {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+    .left {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .hding {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .hding {
+        font-size: 16px;
+    }
+
+}
