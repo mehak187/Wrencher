@@ -1,18 +1,15 @@
 $(document).ready(function () {
-  $(".fa-bars").click(function () {
-    $(".left").toggle();
+  $('.chevron-icon').on('click', function (event) {
+      event.preventDefault(); // Prevent the link from being followed
+      const target = $($(this).data('target'));
+      const isTargetOpen = target.hasClass('show');
+      $('.mydropdown').removeClass('show').each(function () {
+          const otherIcon = $('.chevron-icon[data-target="#' + this.id + '"]');
+          otherIcon.removeClass('rotate');
+      });
+      if (!isTargetOpen) {
+          target.addClass('show');
+          $(this).addClass('rotate');
+      }
   });
-});
-document.getElementById("Upload").addEventListener("change", function (event) {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      document.getElementById("preview").src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  }
-});
-document.getElementById("reset").addEventListener("click", function () {
-  document.getElementById("preview").src = "/img/Avatar.svg";
 });

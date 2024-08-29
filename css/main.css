@@ -67,9 +67,7 @@
 
 :root {
     --sky: #003FDB;
-    --red: #FF3E1D;
-    --lightred: #FF7A77;
-
+    --lblue: #B3E3FC
 }
 
 body {
@@ -132,7 +130,21 @@ textarea {
 .sky {
     color: var(--sky);
 }
-
+.bg-lblue {
+    background: var(--lblue);
+}
+.lblue {
+    color: #009FF4;
+}
+.bg-lgreen {
+    background: #b6dcb3;
+}
+.bg-grey {
+    background: #d5d5d5;
+}
+.grey {
+    color: #979797;
+}
 .bluebtn {
     background-color: var(--sky);
     padding: 10px 15px;
@@ -141,7 +153,9 @@ textarea {
     border-radius: 10px;
     text-decoration: none;
 }
-
+.cus-img {
+    max-width: 50px;
+}
 
 @media screen and (max-width:768px) {
     .main {

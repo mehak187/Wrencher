@@ -203,24 +203,23 @@
     margin: 10px 20px;
     padding-bottom: 10px;
 }
-
+.table tbody,.table td, .table tfoot, .table th, .table thead, .table tr {
+    border: none;
+}
+.table tbody tr {
+    border-bottom: 1px solid #DDDDDD;
+}
 .table th {
-    background-color: var(--sky);
+    background-color: var(--lblue);
     padding: 20px 10px !important;
-    color: #fff;
-    font-weight: 500 !important;
+    color: #000;
     text-wrap: nowrap !important;
 
-}
-
-.table thead tr {
-    border: none !important;
 }
 
 .table td {
     padding: 20px 10px !important;
     text-wrap: nowrap !important;
-    font-weight: 400 !important;
 }
 
 .table thead tr th:first-child {
@@ -297,4 +296,7 @@
 }
 .bell-circle {
     padding: 6px 12px
+}
+.status-btn {
+    min-width: 120px;
 }
