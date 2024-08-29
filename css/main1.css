@@ -300,3 +300,13 @@
 .status-btn {
     min-width: 120px;
 }
+@media screen and (max-width:992px){
+    .tab-100 {
+        width: 100%;
+    }
+}
+@media screen and (max-width:577px){
+    .mbl-100 {
+        width: 100%;
+    }
+}
