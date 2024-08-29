@@ -1,1 +1,5 @@
 /* ------shakaib------- */
+.midbrdr{
+    border-left: solid 1px #DDDDDD;
+    border-right: solid 1px #DDDDDD;
+}
