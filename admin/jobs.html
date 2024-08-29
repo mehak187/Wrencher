@@ -164,7 +164,7 @@
                 </div>
             </div>
             <div class="right">
-                <div class="right-top input-shadow">
+                <div class="right-top px-4 input-shadow">
                     <div class="d-flex align-items-center justify-content-between w-100">
                         <div class="col-6">
                             <div class="d-flex align-items-center justify-content-start">
@@ -214,7 +214,119 @@
                     <div class="bottom-main">
                         <div class="content ">
                             <div class="container-fluid">
-                               
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h1 class="fs-4">
+                                            Jobs
+                                        </h1>
+                                        <p>Here’s how The Repair Guy Services is doing today.</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex border me-3 border-1 rounded-2 bg-white">
+                                            <input type="search" class="border-0 px-3 py-2 bg-transparent focus-none" placeholder="Search Job">
+                                            <span class="d-flex align-items-center bg-grey text-white">
+                                                <i class="fas fa-search px-3 py-2 rounded-2"></i>
+                                            </span>
+                                        </div>
+                                        <div class="d-flex px-3 align-items-center border bg-white border-1 rounded-2">
+                                           <label for="filter"> <i class="fas fa-filter grey"></i></label>
+                                            <select name="" id="filter" class="border-white pe-3 py-2 grey  focus-none font-md bg-transparent" >
+                                                <option value="" selected disabled hidden>Filter</option>
+                                                <option value="">Filter by Date</option>
+                                                <option value="">Filter by Price</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive mt-3">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="align-middle">
+                                                <th class="font-semi">Customer</th>
+                                                <th class="font-semi">Job</th>
+                                                <th class="font-semi">Date</th>
+                                                <th class="font-semi">Team</th>
+                                                <th class="font-semi">Job Status</th>
+                                                <th class="font-semi">Total Price</th>
+                                                <th class="font-semi">Payment Status</th>
+                                                <th class="font-semi">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="table-space border-0"></tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../img/customer1.png" alt="customer1" class="me-2 cus-img rounded-circle">
+                                                        <span class="lblue font-md">Alexia Haass</span>
+                                                    </div>
+                                                </td>
+                                                <td class="font-md">Celling fan install</td>
+                                                <td class="font-md">Mon - Agu 13,2024</td>
+                                                <td class="font-md">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../img/team1.png" alt="team1.png" class="me-2 cus-img rounded-circle">
+                                                        <span class="lblue font-md">Username</span>
+                                                    </div>
+                                                </td>
+                                                <td class="font-md">
+                                                    <button type="button" class="bg-lblue lblue font-md status-btn text-center px-3 py-2 rounded-pill border-0">
+                                                        Scheduled
+                                                    </button>
+                                                </td>
+                                                <td class="font-md">$250.00</td>
+                                                <td class="font-md">
+                                                    <button type="button" class="bg-lgreen text-success font-md status-btn text-center px-3 py-2 rounded-pill border-0">
+                                                        Paid
+                                                    </button>
+                                                </td>
+                                                <td class="font-md">
+                                                    <div>
+                                                        <a href="#"><i class="fas fa-calendar text-black mx-2"></i></a>
+                                                        <a href="#">
+                                                            <i class="fa-solid text-black fa-pen-to-square mx-2"></i></a>
+                                                        <a href="#"><i class="fa-solid text-black fa-trash mx-2"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../img/customer1.png" alt="customer1" class="me-2 cus-img rounded-circle">
+                                                        <span class="lblue font-md">Alexia Haass</span>
+                                                    </div>
+                                                </td>
+                                                <td class="font-md">Celling fan install</td>
+                                                <td class="font-md">Mon - Agu 13,2024</td>
+                                                <td class="font-md">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="../img/team1.png" alt="team1.png" class="me-2 cus-img rounded-circle">
+                                                        <span class="lblue font-md">Username</span>
+                                                    </div>
+                                                </td>
+                                                <td class="font-md">
+                                                    <button type="button" class="bg-warning text-white font-md status-btn text-center px-3 py-2 rounded-pill border-0">
+                                                        Unscheduled
+                                                    </button>
+                                                </td>
+                                                <td class="font-md">$250.00</td>
+                                                <td class="font-md">
+                                                    <button type="button" class="bg-warning text-white font-md status-btn text-center px-3 py-2 rounded-pill border-0">
+                                                        Unpaid
+                                                    </button>
+                                                </td>
+                                                <td class="font-md">
+                                                    <div>
+                                                        <a href="#"><i class="fas fa-calendar text-black mx-2"></i></a>
+                                                        <a href="#">
+                                                            <i class="fa-solid text-black fa-pen-to-square mx-2"></i></a>
+                                                        <a href="#"><i class="fa-solid text-black fa-trash mx-2"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -228,7 +340,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
-        
 </body>
 
 </html>
