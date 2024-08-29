@@ -27,9 +27,9 @@
                     <div class="list">
                         <ul class="first-ul">
                             <li>
-                                <a href="dashboard.html" class="sidelink active d-flex align-items-center justify-content-between">
+                                <a href="dashboard.html" class="sidelink d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../img/dashboard-active.png" alt="" class="sideicon">
+                                        <img src="../img/dashboard.png" alt="" class="sideicon">
                                         <p class="mb-0">Dashboard</p>
                                     </div>
                                     <i class="fas fa-chevron-down chevron-icon" data-target="#dashboardMenu"></i>
@@ -40,15 +40,15 @@
                             </li>
                             
                             <li>
-                                <a href="schedule.html" class="sidelink d-flex align-items-center justify-content-between">
+                                <a href="schedule.html" class="sidelink active d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img src="../img/schedule.png" alt="" class="sideicon">
+                                        <img src="../img/schedule-active.png" alt="" class="sideicon">
                                         <p class="mb-0">Schedule</p>
                                     </div>
                                     <i class="fas fa-chevron-down chevron-icon" data-target="#scheduleMenu"></i>
                                 </a>
                                 <ul id="scheduleMenu" class="collapse mydropdown">
-                                    <li><a class="sidelink" href="workorders.html">Jobs</a></li>
+                                    <li><a class="sidelink" href="jobs.html">Jobs</a></li>
                                 </ul>
                             </li>
                             
@@ -118,7 +118,7 @@
                                         <img src="../img/resources.png" alt="" class="sideicon">
                                         <p class="mb-0">Resources</p>
                                     </div>
-                                    <i class="fas fa-chevron-down chevron-icon" data-target="#oppurtunityMenu"></i>
+                                    <i class="fas fa-chevron-down chevron-icon"></i>
                                 </a>
                             </li>
                             <li>
@@ -214,27 +214,30 @@
                     <div class="bottom-main">
                         <div class="content ">
                             <div class="container-fluid">
-                                <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-xl-flex align-items-center justify-content-between">
                                     <div>
-                                        <h1 class="fs-4">
+                                        <h1 class="fs-4 font-bold">
                                             Jobs
                                         </h1>
                                         <p>Here’s how The Repair Guy Services is doing today.</p>
                                     </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="d-flex border me-3 border-1 rounded-2 bg-white">
-                                            <input type="search" class="border-0 px-3 py-2 bg-transparent focus-none" placeholder="Search Job">
+                                    <div class="d-lg-flex justify-content-end align-items-center">
+                                        <div class="d-flex justify-content-between border me-lg-3 border-1 rounded-2 bg-white">
+                                            <input type="search" class="border-0 tab-100 px-3 py-2 bg-transparent focus-none" placeholder="Search Job">
                                             <span class="d-flex align-items-center bg-grey text-white">
                                                 <i class="fas fa-search px-3 py-2 rounded-2"></i>
                                             </span>
                                         </div>
-                                        <div class="d-flex px-3 align-items-center border bg-white border-1 rounded-2">
+                                        <div class="d-flex ps-3 mt-3 mt-lg-0 me-lg-3 align-items-center border bg-white border-1 rounded-2">
                                            <label for="filter"> <i class="fas fa-filter grey"></i></label>
-                                            <select name="" id="filter" class="border-white pe-3 py-2 grey  focus-none font-md bg-transparent" >
+                                            <select name="" id="filter" class="border-white tab-100 pe-3 py-2 grey  focus-none font-md bg-transparent" >
                                                 <option value="" selected disabled hidden>Filter</option>
                                                 <option value="">Filter by Date</option>
                                                 <option value="">Filter by Price</option>
                                             </select>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                        <button type="button" class="mbl-100 mt-3 mt-lg-0 rounded-2 px-4 text-nowrap py-2 bg-sky text-white border-0">Create Job</button>
                                         </div>
                                     </div>
                                 </div>
