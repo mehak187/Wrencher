@@ -118,7 +118,9 @@ textarea {
     border: solid 1px #cdcdcd;
     outline: none;
 }
-
+.font-12 {
+    font-size: 12px;
+}
 .nowrap {
     text-wrap: nowrap !important;
 }
@@ -145,6 +147,10 @@ textarea {
 .grey {
     color: #979797;
 }
+.bg-prpl {
+    background: #D4E1FF;
+}
+
 .bluebtn {
     background-color: var(--sky);
     padding: 10px 15px;

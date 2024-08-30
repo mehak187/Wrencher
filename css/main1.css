@@ -236,14 +236,14 @@
 .list ul::-webkit-scrollbar,
 .table-responsive::-webkit-scrollbar,
 .content::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
     height: 0px;
 }
 
 .list ul::-webkit-scrollbar-track,
 .table-responsive::-webkit-scrollbar-track,
 .content::-webkit-scrollbar-track {
-    background: var(--sky);
+    background: #DADADA;
     margin: 50px 0;
     border-radius: 50px;
 
@@ -252,15 +252,14 @@
 .list ul::-webkit-scrollbar-thumb,
 .table-responsive::-webkit-scrollbar-thumb,
 .content::-webkit-scrollbar-thumb {
-    background: #fff;
+    background: #000;
     border-radius: 50px;
-    border: solid 1px var(--sky);
 }
 
 .list ul::-webkit-scrollbar-thumb:hover,
 .table-responsive::-webkit-scrollbar-thumb:hover,
 .content::-webkit-scrollbar-thumb:hover {
-    background: #fff;
+    background: #000;
 }
 
 /* -------new code-------- */
@@ -300,6 +299,41 @@
 .status-btn {
     min-width: 120px;
 }
+
+.main-tabb .nav-pills .nav-link {
+    border-radius: 0px;
+    color: #000;
+}
+
+.main-tabb .nav-pills .nav-link.active {
+    border-radius: 0px;
+    color: var(--sky);
+    font-weight: 600;
+    background-color: transparent;
+    position: relative;
+    /* border-bottom: 5px solid var(--sky); */
+}
+.main-tabb .nav-pills .nav-link.active:before {
+    position: absolute;
+    content: '';
+    background: var(--sky);
+    height: 4px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px;
+    border-radius: 100px;
+}
+.main-tabb ul {
+    background: #ECF2FF;
+}
+.pagination-box{
+    background: #FBFCFD;
+}
+.reports {
+    height: calc(100dvh - 215px);
+}
+
 @media screen and (max-width:992px){
     .tab-100 {
         width: 100%;
