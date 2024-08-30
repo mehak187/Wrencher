@@ -333,7 +333,9 @@
 .reports {
     height: calc(100dvh - 215px);
 }
-
+.dot-green {
+    color: #00E813;
+}
 @media screen and (max-width:992px){
     .tab-100 {
         width: 100%;
