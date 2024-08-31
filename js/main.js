@@ -13,3 +13,11 @@ $(document).ready(function () {
       }
   });
 });
+
+// SideBar Toggle
+$(document).ready(function () {
+    $(".fa-bars").click(function () {
+      $(".left").toggle();
+    });
+  });
+  
