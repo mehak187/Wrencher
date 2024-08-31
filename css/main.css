@@ -128,15 +128,20 @@ textarea {
 .bg-sky {
     background: var(--sky);
 }
-
 .sky {
     color: var(--sky);
+}
+.border-sky {
+    border: 1px solid var(--sky);
 }
 .bg-lblue {
     background: var(--lblue);
 }
 .lblue {
     color: #009FF4;
+}
+.border-lblue {
+    border: 1px solid #009FF4;
 }
 .bg-lgreen {
     background: #b6dcb3;

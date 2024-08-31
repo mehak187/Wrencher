@@ -12,6 +12,7 @@ $(document).ready(function () {
           $(this).addClass('rotate');
       }
   });
+
   $('#calendar').fullCalendar({
     header: {
         left: 'prev,next today',
@@ -211,3 +212,13 @@ addLineItemButton.addEventListener('click', function(e) {
 
 // Initial line item (if you want to start with one)
 createLineItem();
+
+});
+
+// SideBar Toggle
+$(document).ready(function () {
+    $(".fa-bars").click(function () {
+      $(".left").toggle();
+    });
+  });
+
