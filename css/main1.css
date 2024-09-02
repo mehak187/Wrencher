@@ -134,6 +134,7 @@
     height: calc(100dvh - 80px);
     padding: 12px;
     color: #000;
+    overflow-y: auto;
 }
 
 .bottom-main {
