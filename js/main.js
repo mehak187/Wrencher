@@ -1,32 +1,30 @@
 $(document).ready(function () {
-  $('.chevron-icon').on('click', function (event) {
-      event.preventDefault(); // Prevent the link from being followed
-      const target = $($(this).data('target'));
-      const isTargetOpen = target.hasClass('show');
-      $('.mydropdown').removeClass('show').each(function () {
-          const otherIcon = $('.chevron-icon[data-target="#' + this.id + '"]');
-          otherIcon.removeClass('rotate');
-      });
-      if (!isTargetOpen) {
-          target.addClass('show');
-          $(this).addClass('rotate');
-      }
-  });
-
-  $('#calendar').fullCalendar({
-    header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: ''
-    },
-    dayRender: function (date, cell) {
-        var currentMonth = $('#calendar').fullCalendar('getDate').month();
-        if (date.month() === currentMonth) {
-            // Additional logic for day rendering can go here, if needed
+    $(".fa-bars").click(function () {
+        $(".left").toggle();
+    });
+    // Toggle dropdown and rotate icon
+    $('.chevron-icon').on('click', function (event) {
+        event.preventDefault(); // Prevent the link from being followed
+        const target = $($(this).data('target'));
+        const isTargetOpen = target.hasClass('show');
+        
+        // Close all other dropdowns and reset icons
+        $('.mydropdown').removeClass('show').each(function () {
+            const otherIcon = $('.chevron-icon[data-target="#' + this.id + '"]');
+            otherIcon.removeClass('rotate');
+        });
+        
+        // Toggle the current dropdown and icon
+        if (!isTargetOpen) {
+            target.addClass('show');
+            $(this).addClass('rotate');
         }
-    }
-});
-});
+    });
+
+    // Initialize FullCalendar
+   
+
+
 
 document.querySelector('.dropdown-toggle1').addEventListener('click', function () {
     const dropdownMenu = document.querySelector('.dropdown-menu1');
@@ -103,36 +101,6 @@ customers1.forEach(customer => {
     customerList1.appendChild(li);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const assignButton = document.getElementById("assign-btn");
-    const inputContainer = document.getElementById("input-container");
-
-    assignButton.addEventListener("click", function () {
-        // Create a new input field
-        const newInputDiv = document.createElement("div");
-        newInputDiv.classList.add("col-xl-4", "col-sm-6", "mb-3");
-
-        newInputDiv.innerHTML = `
-            <div class="position-relative">
-                <input type="text" class="w-100 input-bg border-0 py-2 px-2 rounded-2" placeholder="Designer">
-                <div class="position-x">
-                    <button class="remove-btn border-0 bg-transparent">
-                        <i class="fa-solid fa-circle-xmark text-danger rounded-circle border border-white"></i>
-                    </button>
-                </div>
-            </div>
-        `;
-
-        inputContainer.appendChild(newInputDiv);
-
-        // Add event listener to remove the input field
-        const removeButton = newInputDiv.querySelector(".remove-btn");
-        removeButton.addEventListener("click", function (event) {
-            event.preventDefault(); // Prevent form submission or unwanted button behavior
-            inputContainer.removeChild(newInputDiv);
-        });
-    });
-});
 
 
 const lineItemsContainer = document.getElementById('lineItemsContainer');
@@ -215,10 +183,34 @@ createLineItem();
 
 });
 
-// SideBar Toggle
-$(document).ready(function () {
-    $(".fa-bars").click(function () {
-      $(".left").toggle();
+document.addEventListener("DOMContentLoaded", function () {
+    const assignButton = document.getElementById("assign-btn");
+    const inputContainer = document.getElementById("input-container");
+
+    assignButton.addEventListener("click", function () {
+        // Create a new input field
+        const newInputDiv = document.createElement("div");
+        newInputDiv.classList.add("col-xl-4", "col-sm-6", "mb-3");
+
+        newInputDiv.innerHTML = `
+            <div class="position-relative">
+                <input type="text" class="w-100 input-bg border-0 py-2 px-2 rounded-2" placeholder="Designer">
+                <div class="position-x">
+                    <button class="remove-btn border-0 bg-transparent">
+                        <i class="fa-solid fa-circle-xmark text-danger rounded-circle border border-white"></i>
+                    </button>
+                </div>
+            </div>
+        `;
+
+        inputContainer.appendChild(newInputDiv);
+
+        // Add event listener to remove the input field
+        const removeButton = newInputDiv.querySelector(".remove-btn");
+        removeButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent form submission or unwanted button behavior
+            inputContainer.removeChild(newInputDiv);
+        });
     });
-  });
+});
 
