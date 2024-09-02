@@ -16,356 +16,349 @@
 </head>
 
 <body>
-    <section class="main-job">
-        <div class="">
-            <div class="">
-                <div class="right-top input-shadow">
-                    <div class="d-flex align-items-center justify-content-between w-100">
-                        <div class="col-6">
-                            <div class="d-flex align-items-center justify-content-start">
-                                <a href="#" class="text-dark me-2"><i class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
-                                <h4 class="mb-0 blu font-j">Add New Job</h4>
+    <section class="my-3 mx-sm-3 mx-2 nav-bg rounded-4">
+        <div class="p-3 border-bottom">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="col-6">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <a href="#" class="text-dark me-2"><i class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
+                        <h4 class="mb-0 blu font-j">Add New Job</h4>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="notifications.html" class="border border-1 rounded-circle bell-circle">
+                            <i class="fa-solid fa-bell text-secondary"></i>
+                        </a>
+                        <div bis_skin_checked="1">
+                            <div class="dropdown d-flex justify-content-between w-100 align-items-center"
+                                bis_skin_checked="1">
+                                <a href="#" class="mb-0 text-decoration-none d-flex align-items-end">
+                                    <div class="ms-2 d-none d-sm-block me-2 me-sm-0" bis_skin_checked="1">
+                                        <h6 class="text-center mb-0 l-h font-md text-dark">Name here</h6>
+                                        <p class="text-center mb-0 mt-1 font-10 mb-0 text-secondary ">Super
+                                            Admin</p>
+                                    </div>
+                                    <div class="" bis_skin_checked="1">
+                                        <img src="../img/user.png" alt="user" class="userimg me-0">
+                                    </div>
+                                </a>
+                                <button id="dropdownIcon" class="border-0 bg-transparent ms-2" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-caret-down fs-6"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-user me-2"></i>View
+                                            Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="login.html">
+                                            <i class="fa-solid fa-right-from-bracket me-2"></i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="d-flex align-items-center justify-content-end">
-                                <a href="notifications.html" class="border border-1 rounded-circle bell-circle">
-                                    <i class="fa-solid fa-bell text-secondary"></i>
-                                </a>
-                                <div bis_skin_checked="1">
-                                    <div class="dropdown d-flex justify-content-between w-100 align-items-center"
-                                        bis_skin_checked="1">
-                                        <a href="#" class="mb-0 text-decoration-none d-flex align-items-end">
-                                            <div class="ms-2 d-none d-sm-block me-2 me-sm-0" bis_skin_checked="1">
-                                                <h6 class="text-center mb-0 l-h font-md text-dark">Name here</h6>
-                                                <p class="text-center mb-0 mt-1 font-10 mb-0 text-secondary ">Super
-                                                    Admin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="right-bottom1">
+                <div class="container-fluid">
+                    <form action="">
+                        <h4 class="blu2">Customer</h4>
+                        <div class="border p-3 rounded-3">
+                            <h5>Find or Create a Customer</h5>
+                            <div class="row">
+                                <div class="col-xl-6 col-md-8 col-sm-10">
+                                    <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
+                                        search them by name, email, or phone.</p>
+                                    <div>
+                                        <label for="" class="form-label fw-medium">Select Customer</label>
+                                        <div class="dropdown1">
+                                           <div class="dropdown-toggle1 d-flex bg-white">
+                                                <div class="w-100">
+                                                    <button type="button" class="w-100 dropdown-toggle2 border-0 p-0 text-start bg-white">Select Here</button>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-caret-down"></i>
+                                                </div>
+                                           </div>
+                                            <div class="dropdown-menu1 bg-white shadow rounded-3 p-2">
+                                                <button type="button" class="create-new-btn text-start shadow-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-square-plus me-2"></i>Create a new customer</button>
+                                                <div class="mt-2">
+                                                   <div class="search-input d-flex align-items-center shadow-sm px-3 py-2">
+                                                        <input type="text" placeholder="Search Customer" class="w-100 border-0">
+                                                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                   </div>
+                                                </div>
+                                                <ul class="customer-list mt-2">
+                                                    <!-- Customer items will be added here dynamically -->
+                                                </ul>
                                             </div>
-                                            <div class="" bis_skin_checked="1">
-                                                <img src="../img/user.png" alt="user" class="userimg me-0">
-                                            </div>
-                                        </a>
-                                        <button id="dropdownIcon" class="border-0 bg-transparent ms-2" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fa-solid fa-caret-down fs-6"></i>
-                                        </button>
-                                        <ul class="dropdown-menu w-100">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="fa-solid fa-user me-2"></i>View
-                                                    Profile</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="login.html">
-                                                    <i class="fa-solid fa-right-from-bracket me-2"></i>Logout
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="right-bottom">
-                    <div class="bottom-main">
-                        <div class="content ">
-                            <div class="container-fluid">
-                                <form action="">
-                                    <h4 class="blu2">Customer</h4>
-                                    <div class="border p-3 rounded-3">
-                                        <h5>Find or Create a Customer</h5>
-                                        <div class="row">
-                                            <div class="col-xl-6 col-md-8 col-sm-10">
-                                                <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
-                                                    search them by name, email, or phone.</p>
-                                                <div>
-                                                    <label for="" class="form-label fw-medium">Select Customer</label>
-                                                    <div class="dropdown1">
-                                                       <div class="dropdown-toggle1 d-flex bg-white">
-                                                            <div class="w-100">
-                                                                <button type="button" class="w-100 dropdown-toggle2 border-0 p-0 text-start bg-white">Select Here</button>
-                                                            </div>
-                                                            <div>
-                                                                <i class="fa-solid fa-caret-down"></i>
-                                                            </div>
-                                                       </div>
-                                                        <div class="dropdown-menu1 bg-white shadow rounded-3 p-2">
-                                                            <button type="button" class="create-new-btn text-start shadow-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-square-plus me-2"></i>Create a new customer</button>
-                                                            <div class="mt-2">
-                                                               <div class="search-input d-flex align-items-center shadow-sm px-3 py-2">
-                                                                    <input type="text" placeholder="Search Customer" class="w-100 border-0">
-                                                                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                                               </div>
-                                                            </div>
-                                                            <ul class="customer-list mt-2">
-                                                                <!-- Customer items will be added here dynamically -->
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="border p-3 rounded-3 mt-3">
+                            <h5>Select a Job Address</h5>
+                            <div class="row">
+                                <div class="col-xl-6 col-md-8 col-sm-10">
+                                    <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
+                                        search them by name, email, or phone.</p>
+                                    <div>
+                                        <label for="" class="form-label">Job Address</label>
+                                        <div class="border rounded-3 bg-white d-flex align-items-center pe-2">
+                                            <select name="" id="" class="form-control border-0 shadow-none">
+                                                <option value="">Select here</option>
+                                            </select>
+                                            <img src="../img/edit.png" alt="" class="img-edit">
                                         </div>
+                                        <span class="blu fw-medium pointer" data-bs-target="#mapModal" data-bs-toggle="modal">New Address</span>
                                     </div>
-                                    <div class="border p-3 rounded-3 mt-3">
-                                        <h5>Select a Job Address</h5>
-                                        <div class="row">
-                                            <div class="col-xl-6 col-md-8 col-sm-10">
-                                                <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
-                                                    search them by name, email, or phone.</p>
-                                                <div>
-                                                    <label for="" class="form-label">Job Address</label>
-                                                    <div class="border rounded-3 bg-white d-flex align-items-center pe-2">
-                                                        <select name="" id="" class="form-control border-0 shadow-none">
-                                                            <option value="">Select here</option>
-                                                        </select>
-                                                        <img src="../img/edit.png" alt="" class="img-edit">
-                                                    </div>
-                                                    <span class="blu fw-medium pointer" data-bs-target="#mapModal" data-bs-toggle="modal">New Address</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border p-3 rounded-3 mt-3">
-                                        <div class="d-flex flex-sm-row flex-column-reverse align-items-sm-center justify-content-between">
-                                            <div class="mt-sm-0 mt-3">
-                                                <h5 class="mb-0">Select or create a service</h5>
-                                            </div>
-                                            <div class="d-flex justify-content-end">
-                                                <a href="#" class="btn-blue py-2 px-3 text-decoration-none d-inline-block text-white rounded-2">Estimate Invoice</a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xl-6 col-md-8 col-sm-10">
-                                                <p class="gre mt-2">Which customer would you like to create this job for? If they’ve booked you can
-                                                    search them by name, email, or phone.</p>
-                                                <div>
-                                                    <label for="" class="form-label">Select Service</label>
-                                                    <div class="custom-dropdown">
-                                                        <div class="custom-dropdown-toggle d-flex bg-white">
-                                                            <div class="w-100">
-                                                                <button type="button" class="w-100 custom-toggle-button border-0 p-0 text-start bg-white">Select Here</button>
-                                                            </div>
-                                                            <div>
-                                                                <img src="../img/edit.png" alt="" class="img-edit">
-                                                            </div>
-                                                        </div>
-                                                        <div class="custom-dropdown-menu bg-white shadow rounded-3 p-2">
-                                                            <div class="mt-2">
-                                                                <div class="search-input d-flex align-items-center shadow-sm px-3 py-2">
-                                                                    <input type="text" placeholder="Search Services" class="w-100 border-0">
-                                                                    <button class="search-btn">
-                                                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <ul class="custom-customer-list mt-2">
-                                                                <!-- Customer items will be added here dynamically -->
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <span class="blu fw-medium"><i class="fa-solid fa-square-plus me-2"></i>Add Custom Service</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-xl-5 col-lg-6">
-                                            <div class="border p-2 rounded-3">
-                                                <div class="d-sm-flex align-items-center justify-content-between">
-                                                    <div>
-                                                        <h5>Pick a date and time</h5>
-                                                    </div>
-                                                    <div class="mt-sm-0 mt-3"> 
-                                                        <p class="blu fw-medium">Hide Calendar</p>
-                                                    </div>
-                                                </div>
-                                                <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
-                                                    search them by name, email, or phone.</p>
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-blue text-white py-2 px-3 w-100 border-blu rounded-3">One Time</button>
-                                                    </div>
-                                                    <div class="col-sm-6 mt-sm-0 mt-3">
-                                                        <button class="bg-white text-dark py-2 px-3 w-100 border rounded-3">Recurring Job</button>
-                                                    </div>
-                                                </div>
-                                                <div class="bg-white border rounded-2 p-2 mt-3">
-                                                    <div class="row time-font">
-                                                        <div class="col-xl-4 col-6">
-                                                            <div class="d-flex align-items-center">
-                                                                <div>
-                                                                    <img src="../img/calendar.png" alt="">
-                                                                </div>
-                                                                <div class="ps-2">
-                                                                    <h6 class="mb-0">Fri, Aug 24, 2024</h6>
-                                                                    <p class="gre mb-0">Fri, Aug 24, 2024</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-4 col-6">
-                                                            <h6 class="mb-0">09:00 AM</h6>
-                                                            <p class="gre mb-0">09:00 AM</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bg-white border rounded-2 p-2 mt-3">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-5">
-                                                            <div class="d-flex align-items-center">
-                                                                <div>
-                                                                    <img src="../img/time.png" alt="">
-                                                                </div>
-                                                                <div class="ps-2">
-                                                                    <h6 class="mb-0">1hr</h6>
-                                                                    <p class="gre mb-0">Estimated Job Duration</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-7 main-range mt-sm-0 mt-3">
-                                                            <input type="range" class="w-100">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="border bg-white mt-2 rounded-2 p-2">
-                                                    <div class="d-sm-flex align-items-center justify-content-between">
-                                                        <div class="d-flex align-items-center">
-                                                            <div>
-                                                                <img src="../img/work-t.png" alt="">
-                                                            </div>
-                                                            <div class="ps-2">
-                                                                <h6 class="mb-0">1 worker • 0 Skill Tags</h6>
-                                                                <p class="gre mb-0">Team Required</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-end mt-sm-0 mt-3">
-                                                            <button type="button" class="btn-blue border-blu py-2 px-4 rounded-2 text-white" id="assign-btn">+ Assign</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mt-3">
-                                                        <h5>Assign to team</h5>
-                                                        <div class="row" id="input-container">
-                                                            <!-- New input fields will be added here -->
-                                                        </div>
-                                                        <div class="main-check d-flex align-items-center">
-                                                            <input type="checkbox" id="assignment" checked>
-                                                            <label for="assignment" class="ps-2">Email team about assignment</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-7 col-lg-6 mt-lg-0 mt-3">
-                                            <div class="border p-2 rounded-3">
-                                                <div id="calendar"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border p-2 mt-3 rounded-3">
-                                        <div class="d-flex flex-sm-row flex-column-reverse align-items-sm-center justify-content-between">
-                                            <div class="mt-sm-0 mt-3"> 
-                                                <h5 class="mb-0">Line Items</h5>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-end">
-                                                <a href="#" id="addLineItem" class="btn-blue py-2 px-3 text-decoration-none d-inline-block text-white rounded-2">Add Line Item</a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xl-6 col-md-8 col-sm-10">
-                                                <p class="gre">Which customer would you like to create this job for? If they’ve booked you can search them by name, email, or phone.</p>
-                                            </div>
-                                        </div>
-                                        <div id="lineItemsContainer">
-                                            <!-- Line items will be dynamically inserted here -->
-                                        </div>
-                                    </div>
-                                    <div class="border p-3 rounded-3 mt-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div>
-                                                <h6 class="mb-0">Job Notes</h6>
-                                                <p class="mb-0">Add an internal note just for teammates to see...</p>
-                                            </div>
-                                            <div>
-                                                <button class="btn-blue text-white border-blu px-3 py-2 rounded-2">Select a File</button>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-3">
-                                            <div class="col-12">
-                                                <div class="border rounded-4 px-2 py-1 bg-white w-100">
-                                                    <label for="" class="font-12 gre">Note Details</label>
-                                                    <textarea name="" id="" class="bg-white border-0 w-100 p-0"  rows="5"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <h6>Customer Notification</h6>
-                                        <div class="col-sm-6 ">
-                                            <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
-                                                <div>
-                                                    <h6 class="mb-0">Emails</h6>
-                                                </div>
-                                                <div>
-                                                    <div class="switch">
-                                                        <label class="switch-label">Off</label>
-                                                        <input type="checkbox" class="switch-input" id="toggle">
-                                                        <label class="switch-slider" for="toggle"></label>
-                                                        <label class="switch-label">On</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 mt-sm-0 mt-3">
-                                            <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
-                                                <div>
-                                                    <h6 class="mb-0">Text Messages</h6>
-                                                </div>
-                                                <div>
-                                                    <div class="switch">
-                                                        <label class="switch-label">Off</label>
-                                                        <input type="checkbox" class="switch-input" id="toggle1">
-                                                        <label class="switch-slider" for="toggle1"></label>
-                                                        <label class="switch-label">On</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border rounded-3 p-2 mt-3">
-                                        <h5>Subtotal</h5>
-                                        <div class="row">
-                                            <div class="col-xl-5 col-sm-8">
-                                                <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
-                                                    search them by name, email, or phone.</p>
-                                                <div>
-                                                    <label for="" class="form-label fw-medium">Add Discount</label> 
-                                                    <input type="text" class="form-control shadow-none" placeholder="Type here">
-                                                </div>
-                                                <div class="mt-3">
-                                                    <label for="" class="form-label fw-medium">Add Tax</label> 
-                                                    <input type="text" class="form-control shadow-nonw" placeholder="Type here">
-                                                </div>
-                                                <div class="d-flex align-items-center mt-3">
-                                                    <h6 class="mb-0">Total:</h6>
-                                                    <p class="mb-0 ms-3">USD:</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center mt-5">
-                                        <div>   
-                                            <button class="btn-sv py-2 border rounded-3">Cancel</button>
-                                        </div>
-                                        <div class="ms-3">
-                                            <button class="bg-sky text-white py-2 btn-sv rounded-3">Save & Create Job</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="border p-3 rounded-3 mt-3">
+                            <div class="d-flex flex-sm-row flex-column-reverse align-items-sm-center justify-content-between">
+                                <div class="mt-sm-0 mt-3">
+                                    <h5 class="mb-0">Select or create a service</h5>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <a href="#" class="btn-blue py-2 px-3 text-decoration-none d-inline-block text-white rounded-2">Estimate Invoice</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-md-8 col-sm-10">
+                                    <p class="gre mt-2">Which customer would you like to create this job for? If they’ve booked you can
+                                        search them by name, email, or phone.</p>
+                                    <div>
+                                        <label for="" class="form-label">Select Service</label>
+                                        <div class="custom-dropdown">
+                                            <div class="custom-dropdown-toggle d-flex bg-white">
+                                                <div class="w-100">
+                                                    <button type="button" class="w-100 custom-toggle-button border-0 p-0 text-start bg-white">Select Here</button>
+                                                </div>
+                                                <div>
+                                                    <img src="../img/edit.png" alt="" class="img-edit">
+                                                </div>
+                                            </div>
+                                            <div class="custom-dropdown-menu bg-white shadow rounded-3 p-2">
+                                                <div class="mt-2">
+                                                    <div class="search-input d-flex align-items-center shadow-sm px-3 py-2">
+                                                        <input type="text" placeholder="Search Services" class="w-100 border-0">
+                                                        <button class="search-btn">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <ul class="custom-customer-list mt-2">
+                                                    <!-- Customer items will be added here dynamically -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="blu fw-medium"><i class="fa-solid fa-square-plus me-2"></i>Add Custom Service</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-xl-5 col-lg-6">
+                                <div class="border p-2 rounded-3">
+                                    <div class="d-sm-flex align-items-center justify-content-between">
+                                        <div>
+                                            <h5>Pick a date and time</h5>
+                                        </div>
+                                        <div class="mt-sm-0 mt-3"> 
+                                            <p class="blu fw-medium">Hide Calendar</p>
+                                        </div>
+                                    </div>
+                                    <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
+                                        search them by name, email, or phone.</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button class="btn-blue text-white py-2 px-3 w-100 border-blu rounded-3">One Time</button>
+                                        </div>
+                                        <div class="col-sm-6 mt-sm-0 mt-3">
+                                            <button class="bg-white text-dark py-2 px-3 w-100 border rounded-3">Recurring Job</button>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white border rounded-2 p-2 mt-3">
+                                        <div class="row time-font">
+                                            <div class="col-xl-4 col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <img src="../img/calendar.png" alt="">
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        <h6 class="mb-0">Fri, Aug 24, 2024</h6>
+                                                        <p class="gre mb-0">Fri, Aug 24, 2024</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-6">
+                                                <h6 class="mb-0">09:00 AM</h6>
+                                                <p class="gre mb-0">09:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white border rounded-2 p-2 mt-3">
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-5">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <img src="../img/time.png" alt="">
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        <h6 class="mb-0">1hr</h6>
+                                                        <p class="gre mb-0">Estimated Job Duration</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-7 main-range mt-sm-0 mt-3">
+                                                <input type="range" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border bg-white mt-2 rounded-2 p-2">
+                                        <div class="d-sm-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <img src="../img/work-t.png" alt="">
+                                                </div>
+                                                <div class="ps-2">
+                                                    <h6 class="mb-0">1 worker • 0 Skill Tags</h6>
+                                                    <p class="gre mb-0">Team Required</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-end mt-sm-0 mt-3">
+                                                <button type="button" class="btn-blue border-blu py-2 px-4 rounded-2 text-white" id="assign-btn">+ Assign</button>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <h5>Assign to team</h5>
+                                            <div class="row" id="input-container">
+                                                <!-- New input fields will be added here -->
+                                            </div>
+                                            <div class="main-check d-flex align-items-center">
+                                                <input type="checkbox" id="assignment" checked>
+                                                <label for="assignment" class="ps-2">Email team about assignment</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6 mt-lg-0 mt-3">
+                                <div class="border p-2 rounded-3">
+                                    <div id="calendar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border p-2 mt-3 rounded-3">
+                            <div class="d-flex flex-sm-row flex-column-reverse align-items-sm-center justify-content-between">
+                                <div class="mt-sm-0 mt-3"> 
+                                    <h5 class="mb-0">Line Items</h5>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <a href="#" id="addLineItem" class="btn-blue py-2 px-3 text-decoration-none d-inline-block text-white rounded-2">Add Line Item</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-md-8 col-sm-10">
+                                    <p class="gre">Which customer would you like to create this job for? If they’ve booked you can search them by name, email, or phone.</p>
+                                </div>
+                            </div>
+                            <div id="lineItemsContainer">
+                                <!-- Line items will be dynamically inserted here -->
+                            </div>
+                        </div>
+                        <div class="border p-3 rounded-3 mt-3">
+                            <div class="d-sm-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">Job Notes</h6>
+                                    <p class="mb-0">Add an internal note just for teammates to see...</p>
+                                </div>
+                                <div class="mt-sm-0 mt-3 text-end">
+                                    <button class="btn-blue text-white border-blu px-3 py-2 rounded-2">Select a File</button>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="border rounded-4 px-2 py-1 bg-white w-100">
+                                        <label for="" class="font-12 gre">Note Details</label>
+                                        <textarea name="" id="" class="bg-white border-0 w-100 p-0"  rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <h6 class="fw-semibold">Customer Notification</h6>
+                            <div class="col-sm-6 ">
+                                <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
+                                    <div>
+                                        <h6 class="mb-0">Emails</h6>
+                                    </div>
+                                    <div>
+                                        <div class="switch">
+                                            <label class="switch-label">Off</label>
+                                            <input type="checkbox" class="switch-input" id="toggle">
+                                            <label class="switch-slider" for="toggle"></label>
+                                            <label class="switch-label">On</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-sm-0 mt-3">
+                                <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
+                                    <div>
+                                        <h6 class="mb-0">Text Messages</h6>
+                                    </div>
+                                    <div>
+                                        <div class="switch">
+                                            <label class="switch-label">Off</label>
+                                            <input type="checkbox" class="switch-input" id="toggle1">
+                                            <label class="switch-slider" for="toggle1"></label>
+                                            <label class="switch-label">On</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded-3 p-2 mt-3">
+                            <h5>Subtotal</h5>
+                            <div class="row">
+                                <div class="col-xl-5 col-sm-8">
+                                    <p class="gre">Which customer would you like to create this job for? If they’ve booked you can
+                                        search them by name, email, or phone.</p>
+                                    <div>
+                                        <label for="" class="form-label fw-medium">Add Discount</label> 
+                                        <input type="text" class="form-control shadow-none" placeholder="Type here">
+                                    </div>
+                                    <div class="mt-3">
+                                        <label for="" class="form-label fw-medium">Add Tax</label> 
+                                        <input type="text" class="form-control shadow-nonw" placeholder="Type here">
+                                    </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <h6 class="mb-0">Total:</h6>
+                                        <p class="mb-0 ms-3">USD:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-5">
+                            <div>   
+                                <button class="btn-sv py-2 border rounded-3">Cancel</button>
+                            </div>
+                            <div class="ms-3">
+                                <button class="bg-sky text-white py-2 btn-sv rounded-3">Save & Create Job</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
             </div>
         </div>
     </section>
@@ -599,6 +592,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: ''
+                },
+                
+            });
+            
+        });
+    </script>
 </body>
 
 </html>
