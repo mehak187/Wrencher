@@ -1,0 +1,67 @@
+:root{
+    --black:#000000;
+    --elsky: #F7FBFF;
+}
+.black {
+    color: var(--black);
+}
+.bg-elblue{
+    background: var(--elsky);
+}
+.invoice-btn{
+    border: none;
+    padding: 9px 25px;
+    color: white;
+    border-radius: 5px;
+}
+.my-shadow{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+.custm-select option{
+     color: #8897AD;
+}
+.shadow2{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.table-bin{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+.table-tax{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    padding: 0; 
+    width: 100%;
+}
+   
+.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+} 
+.dropdown-toggle:hover {
+ background: #F7FBFF;
+} 
+.payment-pic{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+.list-div{
+    border-bottom: 1px solid black;
+}

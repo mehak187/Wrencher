@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="/css/main3.css">
+    <link rel="stylesheet" href="/css/main5.css">
+    <title>Invoice</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row mt-4 d-flex">
+                <div class="col-lg-8">
+                    <h3>Invoice</h3>
+                    <p class="mb-0">Here's how The Repair Guy Services is doing today.</p>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-end align-items-center ">
+                    <button class="bg-sky invoice-btn">Creat New Invoice</button>
+                </div>
+            </div>
+            <div class="bg-white p-3 mt-3 rounded-3">
+
+            </div>
+            <div class="row mt-5">
+                <div class="col-8">
+                    <div class="row my-shadow">
+                        <div class="col-6">
+                            <div class="invoice-details d-flex mb-2">
+                                <div>
+                                    <p class="mb-0 font-semi">Company Name:</p>
+                                </div>
+                                <div>
+                                    <p class="mb-0 ms-1">Repair Guy service</p>
+                                </div>
+                            </div>
+                            <div class="invoice-details d-flex mb-2">
+                                <div>
+                                    <p class="mb-0 font-semi">Contact Number:</p>
+                                </div>
+                                <div>
+                                    <p class="mb-0 ms-1">+987454322334</p>
+                                </div>
+                            </div>
+                            <div class="invoice-details d-flex">
+                                <div>
+                                    <p class="mb-0 font-semi">Address:</p>
+                                </div>
+                                <div>
+                                    <p class="mb-0 ms-1">city model@12floor.green town</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="invoice-details d-flex">
+                                <div>
+                                    <p class="mb-0 font-semi">Gmail:</p>
+                                </div>
+                                <div>
+                                    <p class="mb-0 ms-1">Repair Guy service@12gmail.com</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 px-3">
+                    <p class="mb-2">Edit default settings</p>
+                    <div class="customizatin">
+                        <div class="lable font-semi">
+                            <label for="Customization">Customization</label>
+                        </div>
+                        <div class="select">
+                            <select id="Customization" class="bg-lblue w-100 p-2 rounded-2  focus-none custm-select ">
+                                <option selected disabled hidden>Customization</option>
+                                <option value="First">First</option>
+                                <option value="Second">Second</option>
+                                <option value="Third">Third</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-8">
+                    <div class="row bg-lblue p-3 rounded-2">
+                        <div class="col-7">
+                            <div class="add-customer">
+                                <div class="font-semi">
+                                    <label for="add-customer">Add Customer</label>
+                                </div>
+                                <div>
+                                    <select id="add-customer" class="w-100 p-2 rounded-2  focus-none">
+                                        <option selected disabled hidden>Add Here</option>
+                                        <option value="Add1">Add1</option>
+                                        <option value="Add2">Add2</option>
+                                        <option value="Add3">Add3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="add-customer">
+                                <div class="font-semi">
+                                    <label for="invoice-nmbr">Invoice No.</label>
+                                </div>
+                                <div>
+                                    <select id="invoice-nmbr" class="w-100 p-2 rounded-2  focus-none">
+                                        <option selected disabled hidden>123</option>
+                                        <option value="456">456</option>
+                                        <option value="789">789</option>
+                                        <option value="1011">1011</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 mt-3">
+                            <div class="incoicedate">
+                                <div class="font-semi">
+                                    <label for="invoice-date">Invoice Date</label>
+                                </div>
+                                <div>
+                                    <input type="date" id="invoice-date" class="w-100 p-2 rounded-2  focus-none">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 mt-3">
+                            <div class="terms">
+                                <div class="font-semi">
+                                    <label for="terms">Terms</label>
+                                </div>
+                                <div>
+                                    <select id="terms" class="w-100 p-2 rounded-2  focus-none">
+                                        <option selected disabled hidden>Due to receipt</option>
+                                        <option value="456">456</option>
+                                        <option value="789">789</option>
+                                        <option value="1011">1011</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 mt-3">
+                            <div class="duedate">
+                                <div class="font-semi">
+                                    <label for="due-date">Due Date</label>
+                                </div>
+                                <div>
+                                    <input type="date" id="due-date" class="w-100 p-2 rounded-2 focus-none">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 px-3">
+                    <label for="payment" class="font-semi">Payment</label>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn bg-elblue dropdown-toggle w-100 focus-none" id="payment" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-8">
+                    <div>
+                        <label for="tags" class="font-semi">Tags(hidden):</label>
+                    </div>
+                    <div>
+                        <input type="text" id="tags" placeholder="Start typing to add a tag"
+                            class="w-100 p-2 rounded-2 focus-none bg-lblue">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+
+            </div>
+        </div>
+      
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
