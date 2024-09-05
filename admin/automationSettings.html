@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <link rel="stylesheet" href="/css/main5.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-white">
+    <section class="my-3 mx-sm-3 mx-2 nav-bg rounded-4">
+        <div class="p-3 border-bottom">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <a href="#" class="text-dark me-2"><i
+                                class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
+                        <h5 class="mb-0 blu font-j">Create Automations</h5>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="notifications.html" class="border border-1 rounded-circle bell-circle">
+                            <i class="fa-solid fa-bell text-secondary"></i>
+                        </a>
+                        <div bis_skin_checked="1">
+                            <div class="dropdown d-flex justify-content-between w-100 align-items-center"
+                                bis_skin_checked="1">
+                                <a href="#" class="mb-0 text-decoration-none d-flex align-items-end">
+                                    <div class="ms-2 d-none d-sm-block me-2 me-sm-0" bis_skin_checked="1">
+                                        <h6 class="text-center mb-0 l-h font-md text-dark">Name here</h6>
+                                        <p class="text-center mb-0 mt-1 font-10 mb-0 text-secondary ">Super
+                                            Admin</p>
+                                    </div>
+                                    <div class="" bis_skin_checked="1">
+                                        <img src="../img/user.png" alt="user" class="userimg me-0">
+                                    </div>
+                                </a>
+                                <button id="dropdownIcon" class="border-0 bg-transparent ms-2" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-caret-down fs-6"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-user me-2"></i>View
+                                            Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="login.html">
+                                            <i class="fa-solid fa-right-from-bracket me-2"></i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="right-bottom1">
+                <div class="container-fluid h-100">
+                    <form action="" class="">
+                        <h4 class="mb-0 blu2">Set Automations Settings</h4>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle">
+                                    <label class="switch-slider" for="toggle"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Email Automation Review Follow Up</p>
+                            </div>
+                            <div class="fields">
+                                <input type="number" placeholder="00" class="border-0 tab-100 px-3 py-2 focus-none font-md bg-white rounded-3 mb-2">
+                                <select name="" id="filter"
+                                    class="border-white tab-100 pe-5 py-2 focus-none font-md bg-white rounded-3">
+                                    <option value="" selected disabled hidden>Days</option>
+                                    <option value="">Days</option>
+                                    <option value="">Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle2">
+                                    <label class="switch-slider" for="toggle2"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Email Booking Confirmations</p>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle3">
+                                    <label class="switch-slider" for="toggle3"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Email Booking Appointment Reminders</p>
+                            </div>
+                            <div class="fields">
+                                <input type="number" placeholder="00" class="border-0 tab-100 px-3 py-2 focus-none font-md bg-white rounded-3 mb-2">
+                                <select name="" id="filter"
+                                    class="border-white tab-100 pe-5 py-2 focus-none font-md bg-white rounded-3">
+                                    <option value="" selected disabled hidden>Days</option>
+                                    <option value="">Days</option>
+                                    <option value="">Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle4">
+                                    <label class="switch-slider" for="toggle4"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">SMS’  I Sent Over an Estimate</p>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle5">
+                                    <label class="switch-slider" for="toggle5"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">SMS Quote Follow Up</p>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle6">
+                                    <label class="switch-slider" for="toggle6"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Email Quote Follow Up</p>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle7">
+                                    <label class="switch-slider" for="toggle7"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Miss Call Auto SMS</p>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle8">
+                                    <label class="switch-slider" for="toggle8"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Auto Reply to Google Reviews</p>
+                            </div>
+                        </div>
+                        <div class="switch-field-main d-flex align-items-center mt-4 p-2 border-bottom">
+                            <div class="border-right">
+                                <div class="switch me-3">
+                                    <label class="switch-label">No</label>
+                                    <input type="checkbox" class="switch-input" id="toggle9">
+                                    <label class="switch-slider" for="toggle9"></label>
+                                    <label class="switch-label">Yes</label>
+                                </div>
+                            </div>
+                            <div class="me-5 ms-4">
+                                <p class="mb-0">Automated Responses to Textes</p>
+                            </div>
+                            <div class="fields">
+                                <input type="number" placeholder="00" class="border-0 tab-100 px-3 py-2 focus-none font-md bg-white rounded-3 mb-2">
+                                <select name="" id="filter"
+                                    class="border-white tab-100 pe-5 py-2 focus-none font-md bg-white rounded-3">
+                                    <option value="" selected disabled hidden>Days</option>
+                                    <option value="">Days</option>
+                                    <option value="">Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-2">
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 w-100 rounded-3">Cancel</button>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 bg-sky text-white w-100 rounded-3">Save Service</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu1gwHCSzLG9ACacQqLk-LG8oJMkarNF0&libraries=places&callback=initAutocomplete">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
