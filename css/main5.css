@@ -1,12 +1,29 @@
 :root{
     --black:#000000;
     --elsky: #F7FBFF;
+    --skyyblue:#009FF4;
+
+}
+.ffont{
+    font-size: 30px;
 }
 .black {
     color: var(--black);
 }
 .bg-elblue{
     background: var(--elsky);
+}
+.skyyblue{
+    color: var(--skyyblue);
+}
+.bg-skyblue{
+     background: rgba(0, 159, 244, 0.11);
+}
+.bg-dgrey{
+    background: rgba(247, 247, 247, 1);
+}
+.dgrey{
+    color:rgba(93, 114, 133, 1);
 }
 .invoice-btn{
     border: none;
@@ -34,7 +51,7 @@
     border: 1px solid gray;
     border-radius: 10px;
 }
-.dropdown {
+/* .dropdown {
     position: relative;
 }
 .dropdown-menu {
@@ -56,12 +73,45 @@
 } 
 .dropdown-toggle:hover {
  background: #F7FBFF;
-} 
-.payment-pic{
+}  */
+/* .payment-pic{
     height: 30px;
     width: 30px;
     object-fit: contain;
+} */
+.border-btm{
+    border-bottom: 1px solid var(--skyyblue);
 }
-.list-div{
-    border-bottom: 1px solid black;
+.fram{
+    height: 100%;
+    width: 100%;
+}
+.img-size{
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+}
+.btn1-cstm{
+    border: 1px solid var(--skyyblue);
+    background: transparent;
+    padding: 1px 5px;
+    min-width: 100px;
+    border-radius: 5px;
+}
+.btn2-cstm{
+    border: none;
+    background: var(--skyyblue);
+    color:white;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+.btn3-cstm{
+    border:1px solid red;
+    background:transparent;
+    color:red;
+    padding: 1px 33px;
+    border-radius: 5px;
+}
+.border-btm{
+    border-bottom: 1px solid var(--skyyblue);
 }
