@@ -1,0 +1,137 @@
+/* ---sahil---- */
+:root{
+    --light-blue:#ECF1FF;
+    --white:#ffffff;
+    --grey:#5D7285;
+
+}
+.size{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.scard{
+    background-color: var(--light-blue);
+}
+.icon-bg{
+    background-color: var(--white);
+}
+.fa-caret-right{
+    color: var(--grey);
+}
+.img{
+    object-fit: contain;
+}
+.cshadow{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 15px;
+}
+.bell{
+    padding: 6px 12px;
+}
+.dark-blue{
+    color: #003FDB;
+}
+.expense-color{
+    color:#303C6C;
+    ;
+}
+.btn-c{
+    background-color: #E7E7E7;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+}
+.btn-s{
+    background-color: #003FDB;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: none;
+}
+.btn-f{
+    background-color: #003FDB;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+}
+.form-bg{
+    background-color:#F7FBFF;
+}
+.top-b{
+    border-bottom: 1px solid #CDCDCD;
+}
+.border-form{
+    border: 1px solid #979797;
+}
+
+.custom-file-upload {
+    background-color: #003FDB;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+#preview {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.invoiced-bg{
+    background-color:#DADADA;
+    padding: 6px 14px;
+    border-radius: 10px;
+}
+.model-size{
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+    background: #DADADA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.invoice-amount{
+    color:#009FF4;
+}
+.border-invoice{
+    border-bottom:0.5px solid rgba(179, 227, 252, 1);
+}
+@media (max-width: 350px) {
+    .font-c {
+        font-size: 15px;
+    }
+    .btn-s{
+        background-color: #003FDB;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 7px;
+        border: none;
+    }
+    .btn-c{
+        background-color: #E7E7E7;
+        color: black;
+        padding: 8px 15px;
+        border-radius: 10px;
+        border: none;
+    }
+    .custom-file-upload {
+        background-color: #003FDB;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+    }
+}
