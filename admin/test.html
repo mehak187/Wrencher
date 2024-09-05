@@ -3,140 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Select Dropdown</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
     <style>
-        
-.dropdown {
-    position: relative;
-    width: 300px;
-    margin: 50px auto;
-}
+        .logo-d{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .harry-p p,
+        .harry-p h4{
+            font-size: 25px;
+            line-height: 0.2;
+            text-align: center;
+        }
+        .harry-p span{
+            text-align: center;
+            display: block;
+        }
+        .logo-img{
+            width: 100%;
+            height: 100%;
+            max-width: 120px;
+            object-fit: cover;
+        }
+        .border-invoice{
+            border-bottom: 1px solid #ccc;
+        }
+        .border-invoice h3{
+            line-height: 0.2;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .dream p{
+            text-align: end;
+        }
+        .custom-table{
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin-top:  9px;
+        }
 
-.dropdown-toggle {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    text-align: left;
-}
+        .custom-table tbody tr td{
+            border: 1px solid #ccc;
+            padding: 15px 15px;
+            text-align: center;
+        }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-height: 300px;
-    overflow-y: auto;
-    z-index: 1000;
-}
-
-.create-new-btn {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px 5px 0 0;
-}
-
-.search-container {
-    display: flex;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.search-input {
-    flex: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search-btn {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-.customer-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.customer-list-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-}
-
-.customer-list-item img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.customer-list-item:hover {
-    background-color: #f0f0f0;
-}
-
+        .custom-table thead tr th{
+            padding: 15px 15px;
+        }
+        .date-flex{
+            display: flex;
+            align-items: center;
+        }
+        .b-date{
+            margin-left: 5px;
+        }
+        .line-h h4{
+            font-size: 22px;
+            line-height: 0.2;
+        }
+        .date-wed{
+            display: flex;
+            align-items: center;
+        }
+        .date-wed h5{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 0.2;
+        }
+        .date-wed p{
+            line-height: 0.2;
+        }
     </style>
-    <div class="dropdown">
-        <button class="dropdown-toggle">Select Here</button>
-        <div class="dropdown-menu">
-            <button class="create-new-btn">Create a new customer</button>
-            <div class="search-container">
-                <input type="text" placeholder="Search Customer" class="search-input">
-                <button class="search-btn">🔍</button>
+    <section>
+        <div class="logo-d">
+            <div>
+                <img src="../img/odw-logo.png" alt="" class="logo-img">
             </div>
-            <ul class="customer-list">
-                <!-- Customer items will be added here dynamically -->
-            </ul>
+            <div class="harry-p">
+                <p>The Wedding of:</p>
+                <h4>CARROL&HARRY</h4>
+                <span>JUNE, 27 2026</span>
+            </div>
+            <div>
+
+            </div>
         </div>
-    </div>
-
-    <script src="script.js"></script>
-    <script>
-        document.querySelector('.dropdown-toggle').addEventListener('click', function () {
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-});
-
-document.addEventListener('click', function (event) {
-    const isClickInside = document.querySelector('.dropdown').contains(event.target);
-    if (!isClickInside) {
-        document.querySelector('.dropdown-menu').style.display = 'none';
-    }
-});
-
-// Sample customer data
-const customers = [
-    { name: 'Customer name here', img: 'https://via.placeholder.com/30' },
-    { name: 'Customer name here', img: 'https://via.placeholder.com/30' },
-];
-
-const customerList = document.querySelector('.customer-list');
-
-customers.forEach(customer => {
-    const li = document.createElement('li');
-    li.className = 'customer-list-item';
-    li.innerHTML = `<img src="${customer.img}" alt="Customer image">${customer.name}`;
-    customerList.appendChild(li);
-});
-
-    </script>
+        <div class="border-invoice">
+            <h3>INVOICE</h3>
+        </div>
+        <div class="logo-d">
+            <div>
+                <p>Eleaner Fitzgerald</p>
+                <p>Booking-ID: 12345-01</p>
+            </div>
+            <div class="dream">
+                <p>DREAMS PLAYA MUJERES RESORT & SPA</p>
+                <P>JUNE, 25-30 2016 </P>
+                <p>2 ADULTS | 1 KING BED</p>
+            </div>
+        </div>
+        <div>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>GUEST(S)</th>
+                        <th>ROOM CATEGORY</th>
+                        <th>COST</th>
+                        <th>COUNT</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CAROLINA SELMO</td>
+                        <td>PC JR SUITE SWIM UP TROPICAL VIEW</td>
+                        <td>$257</td>
+                        <td>5</td>
+                        <td>$1375</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="logo-d">
+            <div class="line-h">
+                <h4>PAYMENT DATES:</h4>
+                <div class="date-flex">
+                    <p>50% BALANCE DUE:</p>
+                    <p class="b-date">December, 1 2026</p>
+                </div>
+                <div class="date-flex">
+                    <p>50% BALANCE DUE:</p>
+                    <p class="b-date">December, 1 2026</p>
+                </div>
+            </div>
+            <div>
+                <div class="date-wed">
+                    <h5>TOTAL:</h5>
+                    <p class="b-date">December, 1 2026</p>
+                </div>
+                <div class="date-wed">
+                    <h5>PAYMENTS:</h5>
+                    <p class="b-date">December, 1 2026</p>
+                </div>
+                <div class="date-wed">
+                    <h5>BALANCE;</h5>
+                    <p class="b-date">December, 1 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
