@@ -2,10 +2,22 @@
     --black:#000000;
     --elsky: #F7FBFF;
     --skyyblue:#009FF4;
-
+    --skubblue: rgba(0, 159, 244, 0.3);
 }
 .ffont{
     font-size: 30px;
+}
+.bg-skubblue{
+    background: rgba(0, 159, 244, 0.3);
+}
+.bg-red{
+    background: #D92D20;
+}
+.bg-lwhite{
+    background: #E7E7E7;
+}
+.green{
+    color: #0A8A01;
 }
 .black {
     color: var(--black);
@@ -15,6 +27,9 @@
 }
 .skyyblue{
     color: var(--skyyblue);
+}
+.bg-skyyblue{
+    background: var(--skyyblue);
 }
 .bg-skyblue{
      background: rgba(0, 159, 244, 0.11);
@@ -51,34 +66,15 @@
     border: 1px solid gray;
     border-radius: 10px;
 }
-/* .dropdown {
-    position: relative;
-}
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    margin-top: 0;
-    padding: 0; 
-    width: 100%;
-}
-   
-.dropdown-toggle {
+.bg-bin{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    background:#E7E7E7;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    text-align: left;
-} 
-.dropdown-toggle:hover {
- background: #F7FBFF;
-}  */
-/* .payment-pic{
-    height: 30px;
-    width: 30px;
-    object-fit: contain;
-} */
+}
 .border-btm{
     border-bottom: 1px solid var(--skyyblue);
 }
@@ -86,32 +82,53 @@
     height: 100%;
     width: 100%;
 }
+.font-14 {
+    font-size: 14px;
+}
 .img-size{
     height: 15px;
     width: 15px;
     object-fit: contain;
 }
+.team-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit:cover;
+}
 .btn1-cstm{
-    border: 1px solid var(--skyyblue);
-    background: transparent;
-    padding: 1px 5px;
-    min-width: 100px;
-    border-radius: 5px;
+  padding: 2px 5px;
+  border: 1px solid var(--skyyblue);
+  color: var(--skyyblue);
+  border-radius: 5px;
+  min-width: 112px;
 }
 .btn2-cstm{
-    border: none;
-    background: var(--skyyblue);
-    color:white;
-    padding: 2px 20px;
+    padding: 2px 5px;
+    border: 1px solid red;
+    color: red;
     border-radius: 5px;
-}
-.btn3-cstm{
-    border:1px solid red;
-    background:transparent;
-    color:red;
-    padding: 1px 33px;
-    border-radius: 5px;
+    min-width: 112px;
+    background: transparent;
 }
 .border-btm{
     border-bottom: 1px solid var(--skyyblue);
+}
+.men-img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.border-right{
+    border-right: 3px solid rgba(93, 114, 133, 1);
+}
+
+@media screen and (max-width:400px){
+    .deletejob-btn{
+        font-size: 12px;
+    }
+    .generateinvoice-btn{
+        font-size: 12px;
+    }
 }

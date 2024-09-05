@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-white">
+    <section class="my-3 mx-sm-3 mx-2 nav-bg rounded-4">
+        <div class="p-3 border-bottom">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <a href="#" class="text-dark me-2"><i class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
+                        <h5 class="mb-0 blu font-j">Add New Service Materials</h5>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="notifications.html" class="border border-1 rounded-circle bell-circle">
+                            <i class="fa-solid fa-bell text-secondary"></i>
+                        </a>
+                        <div bis_skin_checked="1">
+                            <div class="dropdown d-flex justify-content-between w-100 align-items-center"
+                                bis_skin_checked="1">
+                                <a href="#" class="mb-0 text-decoration-none d-flex align-items-end">
+                                    <div class="ms-2 d-none d-sm-block me-2 me-sm-0" bis_skin_checked="1">
+                                        <h6 class="text-center mb-0 l-h font-md text-dark">Name here</h6>
+                                        <p class="text-center mb-0 mt-1 font-10 mb-0 text-secondary ">Super
+                                            Admin</p>
+                                    </div>
+                                    <div class="" bis_skin_checked="1">
+                                        <img src="../img/user.png" alt="user" class="userimg me-0">
+                                    </div>
+                                </a>
+                                <button id="dropdownIcon" class="border-0 bg-transparent ms-2" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-caret-down fs-6"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-user me-2"></i>View
+                                            Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="login.html">
+                                            <i class="fa-solid fa-right-from-bracket me-2"></i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="right-bottom1">
+                <div class="container-fluid h-100">
+                    <form action="" class="">
+                        <h4 class="mb-0 blu2">New Service</h4>
+                        <div class="row mt-3">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Item Image" class="fw-semibold ps-2">Item Image</label>
+                                        <input type="file" name="" id="Item Image" class="w-100 bg-white border rounded-3 p-2">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Item Name" class="ps-2 fw-semibold">Item Name</label>
+                                        <input type="text" id="Item Name" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Item Cost" class="ps-2 fw-semibold">Item Cost</label>
+                                        <input type="number" id="Item Cost" class="w-100 bg-white border rounded-3 p-2" placeholder="$:">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Inventory" class="ps-2 fw-semibold">Inventory</label>
+                                        <input type="text" id="Inventory" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Mark up" class="ps-2 fw-semibold">Mark up</label>
+                                        <input type="text" id="Mark up" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Sale Price" class="ps-2 fw-semibold">Sale Price</label>
+                                        <input type="text" id="Sale Price" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Vendor Name" class="ps-2 fw-semibold">Vendor Name</label>
+                                        <input type="text" id="Vendor Name" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Vendor Link" class="ps-2 fw-semibold">Vendor Link</label>
+                                        <input type="text" id="Vendor Link" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="Description" class="ps-2 fw-semibold">Description</label>
+                                        <textarea id="Description" class="w-100 bg-white border rounded-3 p-3" placeholder="Add an item expense detail."></textarea>
+                                    </div>
+                                </div>
+                                <div class="d-md-flex align-items-center justify-content-between mb-3">
+                                    <div>
+                                        <h5>Inventory Location Details</h5>
+                                    </div>
+                                    <div class="text-end">
+                                        <button  data-bs-target="#mapModal" data-bs-toggle="modal" type="button" class="border py-2 px-4 rounded-3 blu"><i class="fa-solid fa-location-dot me-2"></i> Search Address</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Street Address" class="ps-2 fw-semibold">Street Address</label>
+                                        <input type="text" id="Street Address" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Apt, floor, bldg (if applicable)" class="ps-2 fw-semibold">Apt, floor, bldg (if applicable)</label>
+                                        <input type="text" id="Apt, floor, bldg (if applicable)" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="City / town / village" class=" ps-2 fw-semibold">City / town / village</label>
+                                        <input type="text" id="City / town / village" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Province / state / territory (if applicaable)" class=" ps-2 fw-semibold">Province / state / territory (if applicaable)</label>
+                                        <input type="text" id="Province / state / territory (if applicaable)" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-sm-6 mb-3">
+                                        <label for="Postal code (if applicable)" class=" ps-2 fw-semibold">Postal code (if applicable)</label>
+                                        <input type="text" id="Postal code (if applicable)" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-2">
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 w-100 rounded-3">Cancel</button>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 bg-sky text-white w-100 rounded-3">Save Service</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal modal-lg fade" id="mapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <h4 class="text-center w-100" id="exampleModalLabel">Where's your place located?</h4>
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-circle-xmark text-danger"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-10 mx-auto">
+                                <h5>Your address is only shared with Job Seekers.</h5>
+                                <div>
+                                    <input id="autocomplete" type="text" class="form-control" placeholder="Enter a location">
+                                    <div id="map" class="mt-3"></div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div>
+                                        <p class="blu fw-medium pointer" data-bs-target="#confirmModal" data-bs-toggle="modal">Enter Manual Address</p>
+                                    </div>
+                                    <div>
+                                        <button class="bg-sky text-white py-2 px-5 rounded-2 border-blu">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-lg fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <h4 class="text-center w-100" id="exampleModalLabel">Confirm your address</h4>
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-circle-xmark text-danger"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-7 mx-auto">
+                                <div class="mt-3">
+                                    <label for="" class="form-label fw-medium mb-0">Street Address</label>
+                                    <input type="text" class="modal-input" placeholder="Sialkot, 90 more">
+                                </div>
+                                <div class="mt-3">
+                                    <label for="" class="form-label fw-medium mb-0">Apt, floor, bldg (if applicable)</label>
+                                    <input type="text" class="modal-input" placeholder="Second Floor">
+                                </div>
+                                <div class="mt-3">
+                                    <label for="" class="form-label fw-medium mb-0">City / town / village</label>
+                                    <input type="text" class="modal-input" placeholder="Main Chino ">
+                                </div>
+                                <div class="mt-3">
+                                    <label for="" class="form-label fw-medium mb-0">Province / state / territory (if applicaable)</label>
+                                    <input type="text" class="modal-input" placeholder="Punjab">
+                                </div>
+                                <div class="mt-3">
+                                    <label for="" class="form-label fw-medium mb-0">Postal code (if applicable)</label>
+                                    <input type="text" class="modal-input" placeholder="57000">
+                                </div>
+                                <div class="row justify-content-between mt-5">
+                                    <div class="col-sm-4 col-6">
+                                        <p class="text-decoration-underline">Clear</p>
+                                    </div>
+                                    <div class="col-sm-4 col-6">
+                                        <button type="submit" 
+                                            class="bg-sky py-2 px-2 w-100 text-white border-primary border-1 rounded-3">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let map;
+        let autocomplete;
+  
+        function initAutocomplete() {
+          // Initialize the map
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: -34.397, lng: 150.644 }, // Default center
+            zoom: 8 // Default zoom
+          });
+  
+          // Initialize the autocomplete functionality
+          var input = document.getElementById('autocomplete');
+          autocomplete = new google.maps.places.Autocomplete(input, {
+            types: ['geocode'] // Restrict the types of predictions.
+          });
+  
+          autocomplete.addListener('place_changed', function() {
+            var place = autocomplete.getPlace();
+  
+            if (!place.geometry) {
+              console.log("No details available for input: '" + place.name + "'");
+              return;
+            }
+  
+            // Get the address components and fill the city and state fields.
+            var addressComponents = place.address_components;
+            var city = '';
+            var state = '';
+  
+            for (var i = 0; i < addressComponents.length; i++) {
+              var component = addressComponents[i];
+              if (component.types.includes('locality')) {
+                city = component.long_name;
+              }
+              if (component.types.includes('administrative_area_level_1')) {
+                state = component.short_name; // or use component.long_name for full state name
+              }
+            }
+  
+            // Center the map on the selected place
+            if (place.geometry.viewport) {
+              map.fitBounds(place.geometry.viewport);
+            } else {
+              map.setCenter(place.geometry.location);
+              map.setZoom(17);
+            }
+          });
+        }
+      </script>
+      <script async defer
+             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu1gwHCSzLG9ACacQqLk-LG8oJMkarNF0&libraries=places&callback=initAutocomplete">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
