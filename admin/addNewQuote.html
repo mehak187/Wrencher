@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/main3.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-white">
+    <section class="my-3 mx-sm-3 mx-2 nav-bg rounded-4">
+        <div class="p-3 border-bottom">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <a href="#" class="text-dark me-2"><i class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
+                        <h5 class="mb-0 blu font-j">Add New Quote</h5>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="notifications.html" class="border border-1 rounded-circle bell-circle">
+                            <i class="fa-solid fa-bell text-secondary"></i>
+                        </a>
+                        <div bis_skin_checked="1">
+                            <div class="dropdown d-flex justify-content-between w-100 align-items-center"
+                                bis_skin_checked="1">
+                                <a href="#" class="mb-0 text-decoration-none d-flex align-items-end">
+                                    <div class="ms-2 d-none d-sm-block me-2 me-sm-0" bis_skin_checked="1">
+                                        <h6 class="text-center mb-0 l-h font-md text-dark">Name here</h6>
+                                        <p class="text-center mb-0 mt-1 font-10 mb-0 text-secondary ">Super
+                                            Admin</p>
+                                    </div>
+                                    <div class="" bis_skin_checked="1">
+                                        <img src="../img/user.png" alt="user" class="userimg me-0">
+                                    </div>
+                                </a>
+                                <button id="dropdownIcon" class="border-0 bg-transparent ms-2" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-caret-down fs-6"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-user me-2"></i>View
+                                            Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="login.html">
+                                            <i class="fa-solid fa-right-from-bracket me-2"></i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="right-bottom1">
+                <div class="container-fluid h-100">
+                    <form action="" class="">
+                        <h4 class="mb-0 blu2">Add New Quote Details</h4>
+                        <div class="row mt-3">
+                            <div class="col-lg-8 col-sm-6">
+                                <div class="row">
+                                    <div class="col-lg-6 my-3">
+                                        <label for="" class="fw-medium ps-2">Items Picture</label>
+                                        <input type="file" name="" id="" class="w-100 bg-white border rounded-3 p-2">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="ps-2 fw-semibold">Select Service</label>
+                                        <select name="" class="w-100 bg-white border rounded-3 p-2" id="">
+                                            <option value="">Select Service</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="ps-2 fw-semibold">Select Product</label>
+                                        <select name="" class="w-100 bg-white border rounded-3 p-2" id="">
+                                            <option value="">Select Type</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="ps-2 fw-semibold">Quantity</label>
+                                        <input type="number" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="ps-2 fw-semibold">Invoice Number</label>
+                                        <input type="number" class="w-100 bg-white border rounded-3 p-2" placeholder="Type Invoice Number">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class=" ps-2 fw-semibold">Date</label>
+                                        <input type="date" class="w-100 bg-white border rounded-3 p-2">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class=" ps-2 fw-semibold">Price</label>
+                                        <input type="number" class="w-100 bg-white border rounded-3 p-2" placeholder="$:">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class=" ps-2 fw-semibold">Internal Job Cost</label>
+                                        <input type="text" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <label for="" class=" ps-2 fw-semibold">Add on packages</label>
+                                            <span class="gre font-12">(Optional)</span>
+                                        </div>
+                                        <input type="number" class="w-100 bg-white border rounded-3 p-2" placeholder="Type Invoice Number">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class=" ps-2 fw-semibold">Taxable</label>
+                                        <input type="text" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class=" ps-2 fw-semibold">Internal Job Estimate Time</label>
+                                        <select class="w-100 bg-white border rounded-3 p-2">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="ps-2 fw-semibold">Terms</label>
+                                        <input type="text" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div> 
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="ps-2 fw-semibold">Location</label>
+                                        <input type="text" class="w-100 bg-white border rounded-3 p-2" placeholder="Type here">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="bg-white p-3 border rounded-3">
+                                    <h6 class="gre font-14">Edit default settings</h6>
+                                    <h6>Payment Details</h6>
+                                    <h6>Accepted Payment Methods</h6>
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <div>
+                                            <p class="gre fw-medium font-12 mb-0">Stripe (2.99 per transaction)</p>
+                                            <div>
+                                                <img src="../img/stripe.png" alt="" class="stripe-img">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="switch">
+                                                <input type="checkbox" class="switch-input" id="toggle4" checked>
+                                                <label class="switch-slider" for="toggle4"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end mt-3">
+                                        <div>
+                                            <p class="gre fw-medium font-12 mb-0">Paypal (2.99 per transaction)</p>
+                                            <div>
+                                                <img src="../img/s-p.png" alt="" class="stripe-img">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="switch">
+                                                <input type="checkbox" class="switch-input" id="toggle">
+                                                <label class="switch-slider" for="toggle"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-2">
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 w-100 rounded-3">Cancel</button>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 bg-sky text-white w-100 rounded-3">Save Quote</button>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 mb-2">
+                                <button class="border py-2 bg-dark text-white w-100 rounded-3">Review & Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
