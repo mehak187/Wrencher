@@ -146,7 +146,7 @@ select:focus{
 }
 
 .btn-sv{
-    min-width: 200px;
+    min-width: 100px;
     border: 1px solid #003FDB;
 }
 .dropdown1 {
@@ -572,5 +572,10 @@ select:focus{
     }
     .pr-height {
         height: calc(100dvh - 246px);
+    }
+    .btn-sv {
+        min-width: 50px;
+        border: 1px solid #003FDB;
+        font-size: 11px;
     }
 }
