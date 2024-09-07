@@ -28,6 +28,9 @@
 .black {
     color: var(--black);
 }
+.bg-lgrey{
+    background: #F5F5F5;
+}
 .bg-elblue{
     background: var(--elsky);
 }
@@ -96,6 +99,17 @@
     width: 15px;
     object-fit: contain;
 }
+.img-icon{
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+}
+.angle-img{
+    height: 20px;
+    width: 25px;
+    object-fit: contain;
+    
+}
 .team-img{
     width: 50px;
     height: 50px;
@@ -129,6 +143,94 @@
 .border-right{
     border-right: 3px solid rgba(93, 114, 133, 1);
 }
+/* .url-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.copy-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+}
+.copy-btn {
+    padding: 10px;
+    background-color:#F5F5F5;
+    color: black;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.view-page-btn {
+    padding: 10px;
+    background-color: #F5F5F5;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.view-page-btn img{
+    margin-right: 5px;
+} */
+.zip-btn{
+    border-radius: 0 4px 4px 0 !important;
+}
+.label-url-btn {
+    width: 100%;
+}
+.url-btn {
+    display: flex;
+    flex-grow: 1; 
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+    max-width: 100%;
+}
+
+.url-btn input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-right: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    min-width: 0; 
+}
+
+.copy-btn {
+    background-color: #F5F5F5;
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.view-page-btn {
+    background-color: #F5F5F5;
+    border: 1px solid #ced4da;
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 10px;
+    align-self: center;
+}
+
+
+
+
+
+@media (max-width: 380px) {
+    .view-page-btn {
+        margin-top: 15px;
+    }
+}
 
 @media screen and (min-width:1440px) {
     .font-12{
@@ -160,8 +262,23 @@
         margin: 0px 3px !important;
     }
  }
-/* @media screen and (max-width:570px) {
-    .Automation-para{
-        margin-left: 0 !important;
+@media (max-width: 576px) {
+    .url-btn {
+        width: 100%;
+        margin-right: 0;
     }
-} */
+
+    .view-page-btn {
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0;
+        justify-content: center;
+        align-self: stretch;
+        margin-top: 5px;
+    }
+}
+ @media screen and (max-width:577px) {
+    .copy-input {
+        width: 100%;
+    }
+ }
