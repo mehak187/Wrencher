@@ -2,6 +2,28 @@ $(document).ready(function () {
     $(".fa-bars").click(function () {
         $(".left").toggle();
     });
+    $("#toggleButton").click(function() {
+        $("#myBlock").show(); // Toggles display block/none
+        
+    });
+
+    // Close the details section and show the mid chat again
+    $(".close-detail").click(function() {
+        $("#myBlock").hide(); // Hides the details panel
+        $(".mid").show(); // Show the chat again
+    });
+
+    // Open chat when clicking on a person
+    $(".person-show").on('click', function() {
+        $(".mid").show(); // Show the chat section
+        $(".left-c").hide(); // Hide the left section
+    });
+
+    // Close the chat section and show the left section again
+    $(".close-chat").on('click', function() {
+        $(".mid").hide(); // Hide the chat
+        $(".left-c").show(); // Show the left section again
+    });
     // Toggle dropdown and rotate icon
     $('.chevron-icon').on('click', function (event) {
         event.preventDefault(); // Prevent the link from being followed
