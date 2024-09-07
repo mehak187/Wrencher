@@ -561,7 +561,7 @@ select:focus{
 
 /* --------Chat----------- */
 .chat-start{
-    height: calc(100vh - 107px);
+    height: calc(100dvh - 107px);
 }
 
 .left-c{
@@ -572,13 +572,19 @@ select:focus{
 
 .mid{
     height: 100%;
-    width: calc(50% - 6px);
+    width: calc(75% - 6px);
     margin: 0 3px;
+}
+
+.mid-chat{
+    width: calc(100% - 300px);
+    display: flex;
 }
 
 .right-c{
     height: 100%;
-    width: calc(25% - 6px);
+    max-width: 300px;
+    width: 100%;
     margin: 0 3px;
 }
 
@@ -598,31 +604,39 @@ select:focus{
 }
 
 .chat-height{
-    height: calc(100vh - 255px);
+    height: calc(100dvh - 255px);
     margin: 9px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 
-.chat-height::-webkit-scrollbar {
+.chat-height::-webkit-scrollbar,
+.per-d::-webkit-scrollbar,
+.per-c::-webkit-scrollbar {
     width: 7px;
     height: 3px;
 }
 
-.chat-height::-webkit-scrollbar-track {
+.chat-height::-webkit-scrollbar-track,
+.per-d::-webkit-scrollbar-track,
+.per-c::-webkit-scrollbar-track {
     background: #DADADA;
     margin: 50px 0;
     border-radius: 50px;
 
 }
 
-.chat-height::-webkit-scrollbar-thumb {
+.chat-height::-webkit-scrollbar-thumb,
+.per-d::-webkit-scrollbar-thumb,
+.per-c::-webkit-scrollbar-thumb {
     background: #000;
     border-radius: 50px;
 }
 
-.chat-height::-webkit-scrollbar-thumb:hover {
+.chat-height::-webkit-scrollbar-thumb:hover,
+.per-d::-webkit-scrollbar-thumb:hover,
+.per-c::-webkit-scrollbar-thumb:hover {
     background: #000;
 }
 
@@ -632,10 +646,113 @@ select:focus{
     border-radius: 10px;
 }
 
+.frank2-bg{
+    background-color: #E0E6FA;
+    border-radius: 10px;
+    width: inherit;
+}
+
+.img-detail{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.chat-search{
+    background-color: #F9FAFC;
+}
+
+.chat-person.active{
+    background-color: #E0E6FA;
+}
+
+.chat-person:hover{
+    background-color: #E0E6FA;
+}
+.chat-person{
+    padding: 9px;
+    border-radius: 10px;
+}
+.per-c{
+    height: calc(100dvh - 190px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.per-d{
+    height: calc(100dvh - 300px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.close-chat{
+    display: none;
+}
+@media screen and (min-width: 1441px){
+    .right-c{
+        display: block !important;
+    }
+    .close-detail{
+        display: none !important;
+    }
+}
 @media screen and (max-width: 1440px){
     .main-tabb .nav-pills .nav-link {
         font-size: 16px;
     }
+    .right-c{
+        position: absolute;
+        top: 0;
+        max-width: none;
+        display: none;
+        left: -3px;
+    }
+    .mid-chat{
+        width: calc(100% - 0px);
+    }
+    .left-c{
+        height: 100%;
+        width: calc(35% - 6px);
+        margin: 0 3px;
+    }
+    
+    .mid{
+        height: 100%;
+        width: calc(65% - 6px);
+        margin: 0 3px;
+        position: relative;
+    }
+    .close-detail{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 1025px){
+    .mid{
+        display: flex !important;
+    }
+    .left-c{
+        display: block !important;
+    }
+}
+@media screen and (max-width: 1024px){
+    .left-c{
+        width: calc(100% - 0px);
+    }
+    .mid{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        display: none;
+    }
+    .close-chat{
+        display: block;
+    }
+    
 }
 @media screen and (max-width: 992px){
     .pr-height {
@@ -675,6 +792,18 @@ select:focus{
     .nav-tabs ul .nav-item .nav-link{
         font-size: 12px;
     }
+    .icons-clr {
+        color: #3551B6;
+        font-size: 14px;
+    }
+    .chat-input{
+        font-size: 13px;
+    }
+    .img-us {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
 }
 @media screen and (max-width: 380px){
     .font-j{
@@ -689,6 +818,12 @@ select:focus{
     .btn-sv {
         min-width: 50px;
         border: 1px solid #003FDB;
+        font-size: 11px;
+    }
+    .frank-bg{
+        font-size: 11px;
+    }
+    .frank2-bg{
         font-size: 11px;
     }
 }
