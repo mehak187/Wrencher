@@ -157,6 +157,49 @@
     align-items: center;
     flex-shrink: 0;
 }
+.client-size{
+    height: 35px;
+    width: 35px;
+    background-color:rgba(196, 228, 245, 1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.clientt-size{
+    height: 35px;
+    width: 35px;
+    background: #B3E3FC;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.report-card{
+    background-color: #FBFBFB;
+    border: 0.5px solid #D3D3D3;
+    border-radius: 10px;
+}
+.dark-red{
+    color:#D20000;
+}
+.light-black{
+    color: rgba(46, 38, 61, 0.4);
+}
+.light-green{
+    color:rgba(27, 131, 4, 1);
+}
+.customer-batch{
+    background-color:rgba(0, 159, 244, 0.2);
+}
+.client-card{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.client-border{
+ border-bottom: 6px solid rgba(0, 159, 244, 1);
+}
 @media screen and (max-width: 350px) {
     .font-c {
         font-size: 15px;
