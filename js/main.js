@@ -62,7 +62,7 @@ document.addEventListener('click', function (event) {
 
 // Sample customer data
 const customers = [
-    { name: 'Customer name here', img: '../img/user.png' },
+    { name: 'Customer', img: '../img/user.png' },
     { name: 'Customer name here', img: '../img/user.png' },
     { name: 'Customer name here', img: '../img/user.png' },
     { name: 'Customer name here', img: '../img/user.png' },
