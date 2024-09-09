@@ -177,6 +177,15 @@
     align-items: center;
     flex-shrink: 0;
 }
+.report-circle{
+    height: 20px;
+    width: 50px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECF1FF;
+}
 .report-card{
     background-color: #FBFBFB;
     border: 0.5px solid #D3D3D3;
@@ -199,6 +208,9 @@
 }
 .client-border{
  border-bottom: 6px solid rgba(0, 159, 244, 1);
+}
+.light-yellow{
+    background: #FF9C004D;
 }
 @media screen and (max-width: 350px) {
     .font-c {
