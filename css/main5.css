@@ -19,6 +19,12 @@
 .bg-red{
     background: #D92D20;
 }
+.red{
+    color: #D20000;
+}
+.perpel{
+    color:var(--Color-Palette-primary-main, #8C57FF);
+}
 .bg-lwhite{
     background: #E7E7E7;
 }
@@ -48,6 +54,10 @@
 }
 .dgrey{
     color:rgba(93, 114, 133, 1);
+}
+.skin{
+    color: var(--Theme-text-disabled, rgba(46, 38, 61, 0.4));
+
 }
 .invoice-btn{
     border: none;
@@ -102,6 +112,11 @@
 .img-icon{
     height: 45px;
     width: 45px;
+    object-fit: contain;
+}
+.img-incom{
+    height: 25px;
+    width: 25px;
     object-fit: contain;
 }
 .angle-img{
@@ -177,6 +192,12 @@
 .view-page-btn img{
     margin-right: 5px;
 } */
+.b-shadow{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.profit-border-btm{
+    border-bottom: 6px solid rgba(0, 159, 244, 1);
+}
 .zip-btn{
     border-radius: 0 4px 4px 0 !important;
 }
@@ -222,9 +243,21 @@
     align-self: center;
 }
 
+
 .Request-Quote-main:hover{
     background-color: #ECF1FF;
     border: 1px solid #ECF1FF !important;
+
+.profit-size{
+    height: 35px;
+    width: 35px;
+    background-color:rgba(196, 228, 245, 1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
 }
 
 
