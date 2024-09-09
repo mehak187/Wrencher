@@ -22,7 +22,7 @@
             <div class="d-flex align-items-center justify-content-between w-100">
                 <div class="col-6">
                     <div class="d-flex align-items-center justify-content-start">
-                        <a href="#" class="text-dark me-2"><i class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
+                        <a href="expense.html" class="text-dark me-2"><i class="fa-solid fa-arrow-left bg-white shadow p-2 rounded-circle"></i></a>
                         <h4 class="mb-0 dark-blue font-j">Add New Expenses</h4>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                     <div class="row">
                         <div class="p-4">
                             <h3 class="expense-color">New Expense</h3>
-                            <form>
+                            <form action="expense.html">
                                 <div class="col-md-8">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -124,16 +124,9 @@
                                         </div>
                                         <div class="col-md-6 mt-3">
                                             <label for="picture" class="form-label font-md">Receipt</label>
-                                            <div class="border rounded-3 d-flex align-items-center pe-2 form-bg">
-                                                <label for="picture" class="custom-file-upload border-0 shadow-none px-3 py-2 rounded-3">
-                                                    Upload Image
-                                                </label>
-                                                <input type="file" id="picture" name="file" class="form-control d-none rounded-3 form-bg">
-                                                <div id="preview-container" class="ms-3">
-                                                    <img id="preview" src="" alt="Preview" class="d-none rounded-3">
-                                                    <span id="file-status" class="text-secondary ms-2">No file chosen</span>
-                                                </div>
-                                            </div>
+                                            <div class="border rounded-3 d-flex align-items-center pe-2 form-bg p-1">  
+                                                <input type="file" id="picture" name="file-upload">
+                                            </div>                                            
                                         </div>                               
                                         <div class="col-md-6 mt-3">
                                             <label for="payment" class="form-label font-md">Payment Status:</label>
@@ -157,7 +150,7 @@
                                                 <button class="btn-c fs-6" type="button">Cancel</button>
                                             </div>
                                             <div class="mt-5 ms-3">
-                                                <button class="btn-s fs-6" type="submit">Save Expenses</button>
+                                                    <button class="btn-s fs-6" type="submit">Save Expenses</button>
                                             </div>
                                         </div>
                                     </div>
