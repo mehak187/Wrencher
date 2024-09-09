@@ -83,6 +83,8 @@ customers.forEach(customer => {
     customerList.appendChild(li);
 });
 
+// ---------------
+
 document.querySelector('.custom-dropdown-toggle').addEventListener('click', function () {
     const dropdownMenu = document.querySelector('.custom-dropdown-menu');
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
@@ -123,7 +125,7 @@ customers1.forEach(customer => {
     customerList1.appendChild(li);
 });
 
-
+// -------------
 
 const lineItemsContainer = document.getElementById('lineItemsContainer');
 const addLineItemButton = document.getElementById('addLineItem');

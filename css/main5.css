@@ -247,7 +247,7 @@
 .Request-Quote-main:hover{
     background-color: #ECF1FF;
     border: 1px solid #ECF1FF !important;
-
+}
 .profit-size{
     height: 35px;
     width: 35px;
@@ -257,8 +257,14 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-
 }
+.reputation-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
 
 
 @media screen and (max-width: 577px){
