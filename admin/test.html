@@ -1,161 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <style>
-        .logo-d{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .harry-p p,
-        .harry-p h4{
-            font-size: 25px;
-            line-height: 0.2;
-            text-align: center;
-        }
-        .harry-p span{
-            text-align: center;
-            display: block;
-        }
-        .logo-img{
-            width: 100%;
-            height: 100%;
-            max-width: 120px;
-            object-fit: cover;
-        }
-        .border-invoice{
-            border-bottom: 1px solid #ccc;
-        }
-        .border-invoice h3{
-            line-height: 0.2;
-            font-size: 25px;
-            font-weight: 600;
-        }
-        .dream p{
-            text-align: end;
-        }
-        .custom-table{
-            width: 100%;
-            border: 1px solid #ccc;
-            border-collapse: collapse;
-            margin-top:  9px;
-        }
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-        .custom-table tbody tr td{
-            border: 1px solid #ccc;
-            padding: 15px 15px;
-            text-align: center;
-        }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
 
-        .custom-table thead tr th{
-            padding: 15px 15px;
-        }
-        .date-flex{
-            display: flex;
-            align-items: center;
-        }
-        .b-date{
-            margin-left: 5px;
-        }
-        .line-h h4{
-            font-size: 22px;
-            line-height: 0.2;
-        }
-        .date-wed{
-            display: flex;
-            align-items: center;
-        }
-        .date-wed h5{
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 0.2;
-        }
-        .date-wed p{
-            line-height: 0.2;
-        }
+.chat-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 20px;
+  width: 90%;
+  height: 90vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.contacts-list {
+  overflow-y: auto;
+  height: calc(100% - 60px);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.message-preview {
+  color: #666;
+}
+
+.timestamp {
+  color: #999;
+  font-size: 12px;
+}
+
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header-info {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.status {
+  color: #999;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message.self {
+  justify-content: flex-end;
+}
+
+.message.other .message-img {
+  margin-right: 10px;
+}
+
+.message-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-content {
+  max-width: 60%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message.self .message-content {
+  background-color: #d1f2eb;
+}
+
+.message-text {
+  margin-bottom: 5px;
+}
+
+.message-time {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.user-details {
+  padding: 20px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
     </style>
-    <section>
-        <div class="logo-d">
-            <div>
-                <img src="../img/odw-logo.png" alt="" class="logo-img">
-            </div>
-            <div class="harry-p">
-                <p>The Wedding of:</p>
-                <h4>CARROL&HARRY</h4>
-                <span>JUNE, 27 2026</span>
-            </div>
-            <div>
+  <div class="chat-container">
+    <!-- Sidebar (left) -->
+    <div class="sidebar">
+      <div class="search-box">
+        <input type="text" placeholder="Search people">
+      </div>
+      <div class="contacts-list">
+        <div class="contact">
+          <img src="user.jpg" alt="User" class="contact-img">
+          <div class="contact-info">
+            <p class="contact-name">Guest Name</p>
+            <p class="message-preview">Read message text...</p>
+            <span class="timestamp">30 min ago</span>
+          </div>
+        </div>
+        <!-- Repeat similar contact structure for more contacts -->
+      </div>
+    </div>
 
-            </div>
+    <!-- Chat area (middle) -->
+    <div class="chat-area">
+      <div class="chat-header">
+        <img src="user.jpg" alt="User" class="header-img">
+        <div class="header-info">
+          <p class="user-name">Franky Schmid</p>
+          <p class="status">Franky is typing...</p>
         </div>
-        <div class="border-invoice">
-            <h3>INVOICE</h3>
+      </div>
+
+      <div class="chat-messages">
+        <div class="message other">
+          <img src="user.jpg" alt="User" class="message-img">
+          <div class="message-content">
+            <p class="message-text">Hi George! Nice to hear you again!</p>
+            <span class="message-time">July 24, 4:27pm</span>
+          </div>
         </div>
-        <div class="logo-d">
-            <div>
-                <p>Eleaner Fitzgerald</p>
-                <p>Booking-ID: 12345-01</p>
-            </div>
-            <div class="dream">
-                <p>DREAMS PLAYA MUJERES RESORT & SPA</p>
-                <P>JUNE, 25-30 2016 </P>
-                <p>2 ADULTS | 1 KING BED</p>
-            </div>
+        <div class="message self">
+          <div class="message-content">
+            <p class="message-text">I'm fine, thank you! And what about you?</p>
+            <span class="message-time">July 24, 4:28pm</span>
+          </div>
         </div>
-        <div>
-            <table class="custom-table">
-                <thead>
-                    <tr>
-                        <th>GUEST(S)</th>
-                        <th>ROOM CATEGORY</th>
-                        <th>COST</th>
-                        <th>COUNT</th>
-                        <th>SUBTOTAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CAROLINA SELMO</td>
-                        <td>PC JR SUITE SWIM UP TROPICAL VIEW</td>
-                        <td>$257</td>
-                        <td>5</td>
-                        <td>$1375</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="logo-d">
-            <div class="line-h">
-                <h4>PAYMENT DATES:</h4>
-                <div class="date-flex">
-                    <p>50% BALANCE DUE:</p>
-                    <p class="b-date">December, 1 2026</p>
-                </div>
-                <div class="date-flex">
-                    <p>50% BALANCE DUE:</p>
-                    <p class="b-date">December, 1 2026</p>
-                </div>
-            </div>
-            <div>
-                <div class="date-wed">
-                    <h5>TOTAL:</h5>
-                    <p class="b-date">December, 1 2026</p>
-                </div>
-                <div class="date-wed">
-                    <h5>PAYMENTS:</h5>
-                    <p class="b-date">December, 1 2026</p>
-                </div>
-                <div class="date-wed">
-                    <h5>BALANCE;</h5>
-                    <p class="b-date">December, 1 2026</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Repeat messages as needed -->
+      </div>
+
+      <div class="chat-input">
+        <input type="text" placeholder="Type your message">
+        <button>Send</button>
+      </div>
+    </div>
+
+    <!-- User details (right) -->
+    <div class="user-details">
+      <img src="user.jpg" alt="User" class="user-img">
+      <h3>Franky Schmid</h3>
+      <p>Phone Number: 07923456789</p>
+      <p>Date of Birth: 12/12/2000</p>
+      <p>Gender: Female</p>
+      <h4>Tags</h4>
+      <p>Active Automation</p>
+      <h4>DND</h4>
+      <p>Off</p>
+    </div>
+  </div>
 </body>
 </html>

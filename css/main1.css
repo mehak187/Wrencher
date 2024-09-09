@@ -75,6 +75,16 @@
     color: #000;
 }
 
+.sidelink p{
+    color: #5D7285;
+    font-weight: 500;
+}
+
+.sidelink.active p{
+    color: #fff;
+    font-weight: 500;
+}
+
 .sideicon {
     max-width: 20px;
     object-fit: contain;
