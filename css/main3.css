@@ -688,6 +688,7 @@ select:focus{
 .close-chat{
     display: none;
 }
+/* ----------chat end ------------- */
 @media screen and (min-width: 1441px){
     .right-c{
         display: block !important;
