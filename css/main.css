@@ -129,7 +129,7 @@ textarea {
     background: var(--sky);
 }
 .sky {
-    color: var(--sky);
+    color: var(--sky) !important;
 }
 .border-sky {
     border: 1px solid var(--sky);
