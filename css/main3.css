@@ -149,11 +149,13 @@ select:focus{
     min-width: 100px;
     border: 1px solid #003FDB;
 }
-.dropdown1 {
+.dropdown1,
+.dropdown-container {
     position: relative;
 }
 
-.dropdown-toggle1 {
+.dropdown-toggle1 ,
+.dropdown-trigger{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -163,7 +165,8 @@ select:focus{
     text-align: left;
 }
 
-.dropdown-menu1 {
+.dropdown-menu1,
+.dropdown-content {
     display: none;
     position: absolute;
     width: 100%;
