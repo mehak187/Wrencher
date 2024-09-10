@@ -3,7 +3,6 @@
     --light-blue:#ECF1FF;
     --white:#ffffff;
     --grey:#5D7285;
-
 }
 .size{
     height: 50px;
@@ -38,7 +37,6 @@
 }
 .expense-color{
     color:#303C6C;
-    ;
 }
 .btn-c{
     background-color: #E7E7E7;
@@ -183,6 +181,10 @@
 }
 .light-green{
     color:rgba(27, 131, 4, 1);
+}
+.quote-required{
+    background: rgba(34, 34, 34, 0.3);
+    color:rgba(34, 34, 34, 1);
 }
 .customer-batch{
     background-color:rgba(0, 159, 244, 0.2);
