@@ -229,12 +229,16 @@
                                     </div>
                                     <div class="d-lg-flex justify-content-end align-items-center">
                                         <div class="d-flex justify-content-end">
-                                            <button type="button"
-                                                class="mbl-100 mt-3 mt-lg-0 rounded-2 px-4 text-nowrap py-2 me-2 bg-sky text-white border-0 btn-sv">+
-                                                Add New Call</button>
-                                            <button type="button"
+                                                <button type="button" class="mbl-100 mt-3 mt-lg-0 rounded-2 px-4 text-nowrap py-2 me-2 bg-sky text-white border-0 btn-sv" 
+                                                data-bs-toggle="modal" 
+                                                data-bs-target="#callpop">+
+                                                Add New Call
+                                            </button>
+                                            <a href="#">
+                                                <button type="button"
                                                 class="mbl-100 mt-3 mt-lg-0 rounded-2 px-4 text-nowrap py-2 me-2 bg-sky text-white border-0 btn-sv">+
                                                 New Job</button>
+                                            </a>
                                         </div>
                                         <div
                                             class="d-flex ps-3 pe-1 mt-2 mt-lg-0 me-lg-2 align-items-center border bg-white border-1 rounded-2">
@@ -483,6 +487,53 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="callpop" tabindex="-1" aria-labelledby="callpopLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <div class="text-center w-100" id="callpopLabel">
+                        <h3>Add New Call</h3>
+                    </div>
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-circle-xmark text-danger"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-5">
+                        <label for="Customer Name" class="font-semi">Customer Name</label>
+                        <input type="text" id="Customer Name" placeholder="Lucas Hood" class="form-control focus-none mb-2">
+                        <label for="Phone" class="font-semi">Phone</label>
+                        <input type="number" id="Phone" placeholder="1234567" required class="form-control focus-none mb-2">
+                        <label for="email" class="font-semi">Email (Optional)</label>
+                        <input type="email" id="email" placeholder="awesomaa1@domain.com" class="form-control focus-none mb-2">
+                        <label for="address" class="font-semi">Address (Optional)</label>
+                        <input type="text" id="address" placeholder="123 Eve, Rookers Block Las Vegas" class="form-control focus-none mb-2">
+                        <label  class="font-semi">What You Are Looking For?</label>
+                        <div class="check-box d-sm-flex flex-wrap">
+                            <div>
+                                <input type="checkbox" id="Quote"> <label for="Quote">Quote</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="ms-0 ms-sm-2" id="Schedule an Estimate"> <label for="Schedule an Estimate">Schedule an Estimate</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="ms-0 ms-sm-2" id="Other"> <label for="Other">Other</label>
+                            </div>
+                        </div>
+                        <label for="Notes" class="font-semi">Notes</label>
+                        <div class="call-textarea">
+                            <textarea id="Notes" placeholder="57000" class="w-100 bg-white border rounded-3 p-3"></textarea>
+                        </div>
+                        <div class="call-pop-btns d-sm-flex flex-wrap justify-content-between align-items-center mt-3">
+                            <button type="button" class="mbl-100 btn-sv rounded-2 px-sm-4 px-2 text-nowrap py-2 bg-red text-white border-0 mb-2 mb-sm-0">Cancel</button>
+                            <button type="button" class="mbl-100 btn-sv rounded-2 px-sm-4 px-2 text-nowrap py-2 bg-sky text-white border-0">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
