@@ -198,6 +198,37 @@
 .light-yellow{
     background: #FF9C004D;
 }
+.client-d-qutation{
+    max-width: 100%;
+}
+.client-d-btnr {
+    color: #FFFFFF;
+    background-color: #5D7285;
+    box-shadow: 0px 14px 24px 0px #00000026;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.client-btn-accept{
+    color: #ffffff;
+    background-color: #00A400;
+    padding: 7px 140px;
+    box-shadow: 0px 14px 24px 0px #00000026;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.client-btn-decline{
+    color:  #202529;
+    background-color: #E7E7E7;
+    padding: 7px 140px;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
 @media screen and (max-width: 350px) {
     .font-c {
         font-size: 15px;
@@ -224,5 +255,25 @@
         font-size: 15px;
         border: none;
         cursor: pointer;
+    }
+}
+@media screen and (max-width:450px){
+    .client-btn-accept{
+        color: #ffffff;
+        background-color: #00A400;
+        padding: 5px 70px;
+        box-shadow: 0px 14px 24px 0px #00000026;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    .client-btn-decline{
+        color:  #202529;
+        background-color: #E7E7E7;
+        padding: 5px 70px;
+        border: 1px solid #D5D5D5;
+        border-radius: 10px;
+        border: none;
+        outline: none;
     }
 }
