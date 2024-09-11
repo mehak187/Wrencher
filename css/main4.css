@@ -229,6 +229,17 @@
     border: none;
     outline: none;
 }
+.clientmodal{
+    background-color: var(--sky);
+    color: white;              
+    border: none;
+    padding: 10px;
+    border-radius: 5px;        
+  }
+.clientmodal option {
+    background-color: #FFFFFF;
+    color: black;
+}
 @media screen and (max-width: 350px) {
     .font-c {
         font-size: 15px;
